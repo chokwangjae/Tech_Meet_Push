@@ -1,0 +1,11 @@
+framework module MatrixMobileWebSquare {
+  umbrella header "MatrixMobileWebSquare.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileWebSquare.Swift {
+  header "MatrixMobileWebSquare-Swift.h"
+  requires objc
+}

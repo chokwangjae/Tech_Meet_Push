@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-view" type="basic" version="9.1.1.0">
+	<name>View</name>
+	<description>MatrixMobile View Plugin</description>
+	<js-module name="view" src="www/view.js">
+		<clobbers target="matrixMobile.plugin.view" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileViewPlugin">
+				<param name="ios-package" value="MatrixMobileViewPlugin" />
+			</feature>
+		</config-file>
+		<framework embed="true" src="src/MatrixMobileView.framework" />
+	</platform>
+</plugin>

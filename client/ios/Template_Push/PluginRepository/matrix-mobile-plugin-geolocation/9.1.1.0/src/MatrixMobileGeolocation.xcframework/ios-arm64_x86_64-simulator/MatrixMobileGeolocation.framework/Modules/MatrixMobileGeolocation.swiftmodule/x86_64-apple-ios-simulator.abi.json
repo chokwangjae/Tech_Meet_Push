@@ -1,0 +1,141 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileGeolocation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileGeolocation"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileGeolocation"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 461,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 19,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 553,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 587,
+      "length": 16,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 461,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 19,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 553,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 587,
+      "length": 16,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 461,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 19,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 553,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 587,
+      "length": 16,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 931,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "StringLiteral",
+      "offset": 955,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileGeolocation\/9.1.1.0\/MatrixMobileGeolocation\/MatrixMobileGeolocation.swift",
+      "kind": "StringLiteral",
+      "offset": 5349,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

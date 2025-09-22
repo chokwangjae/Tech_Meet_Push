@@ -1,0 +1,11 @@
+framework module MatrixMobileSpeech {
+  umbrella header "MatrixMobileSpeech.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileSpeech.Swift {
+  header "MatrixMobileSpeech-Swift.h"
+  requires objc
+}

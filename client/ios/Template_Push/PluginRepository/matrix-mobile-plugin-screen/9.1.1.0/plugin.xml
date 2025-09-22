@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-screen" type="basic" version="9.1.1.0">
+	<name>Screen</name>
+	<description>MatrixMobile Screen Plugin</description>
+	<js-module name="screen" src="www/screen.js">
+		<clobbers target="matrixMobile.plugin.screen" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileScreenPlugin">
+				<param name="ios-package" value="MatrixMobileScreenPlugin" />
+			</feature>
+		</config-file>
+		<framework embed="true" src="src/MatrixMobileScreen.framework" />
+	</platform>
+</plugin>

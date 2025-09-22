@@ -1,0 +1,11 @@
+framework module MatrixMobileStorage {
+  umbrella header "MatrixMobileStorage.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileStorage.Swift {
+  header "MatrixMobileStorage-Swift.h"
+  requires objc
+}

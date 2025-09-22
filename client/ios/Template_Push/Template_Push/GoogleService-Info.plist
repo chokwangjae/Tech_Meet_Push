@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAbvCu5vsfq9WPo-j1JIVJVrriB09UVjAI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>984176238269</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>matrix.push.sample</string>
+	<key>PROJECT_ID</key>
+	<string>matrixai-ad3e2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>matrixai-ad3e2.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:984176238269:ios:a5d1b8294e1f45b5f061d4</string>
+</dict>
+</plist>

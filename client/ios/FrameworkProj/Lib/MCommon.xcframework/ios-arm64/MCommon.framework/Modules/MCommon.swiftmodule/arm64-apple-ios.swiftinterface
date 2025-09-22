@@ -1,0 +1,884 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MCommon
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Combine
+import CoreData
+import Foundation
+import MNetwork
+import MUtil
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Foundation.Bundle {
+  public static let edgeBundleID: Swift.String
+  public static var applicationInfo: [Swift.String : Any] {
+    get
+  }
+}
+extension Swift.String {
+  public static let uuidKey: Swift.String
+  public static let srouce: Swift.String
+  public static let osType: Swift.String
+  public static let edgeIdKey: Swift.String
+  public static let commonDestination: Swift.String
+  public static let tokenAvailableTime: Swift.Double
+  public static let bundleIdentifier: Swift.String
+  public static let userDefaultVersionKey: Swift.String
+}
+extension Swift.String {
+  public static let appVersion: Swift.String
+  public static let appID: Swift.String
+}
+public protocol EntityConvertible {
+  associatedtype ManagedObject : CoreData.NSManagedObject
+  func toManagedObject(in context: CoreData.NSManagedObjectContext) -> Self.ManagedObject
+}
+public protocol CoreDataManagerProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func selectAll(_ entity: Swift.String) -> [Any]?
+  #endif
+  func saveEntity(data: any MCommon.EntityConvertible)
+  func saveEntity(data: any MCommon.EntityConvertible) async throws
+  func removeData(_ entity: Swift.String, _ predicate: Foundation.NSPredicate) throws
+  func removeAllData(_ entity: Swift.String) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  func select(_ entity: Swift.String, _ predicate: Foundation.NSPredicate) -> [Any]?
+  #endif
+  func select(objectID: CoreData.NSManagedObjectID) throws -> CoreData.NSManagedObject
+  func execute(_ request: CoreData.NSPersistentStoreRequest) throws -> CoreData.NSPersistentStoreResult
+  func fetch<T>(_ request: CoreData.NSFetchRequest<T>) throws -> [T] where T : CoreData.NSManagedObject
+}
+final public class CoreDataManager : MCommon.CoreDataManagerProtocol {
+  public init(persistentContainer: CoreData.NSPersistentContainer)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func selectAll(_ entity: Swift.String) -> [Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func select(_ entity: Swift.String, _ predicate: Foundation.NSPredicate) -> [Any]?
+  #endif
+  final public func saveEntity(data: any MCommon.EntityConvertible)
+  final public func saveEntity(data: any MCommon.EntityConvertible) async throws
+  final public func removeData(_ entity: Swift.String, _ predicate: Foundation.NSPredicate) throws
+  final public func removeAllData(_ entity: Swift.String) throws
+  final public func select(objectID: CoreData.NSManagedObjectID) throws -> CoreData.NSManagedObject
+  final public func execute(_ request: CoreData.NSPersistentStoreRequest) throws -> CoreData.NSPersistentStoreResult
+  final public func fetch<T>(_ request: CoreData.NSFetchRequest<T>) throws -> [T] where T : CoreData.NSManagedObject
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DIContainer {
+  public static let shared: MCommon.DIContainer
+  @objc deinit
+}
+extension MCommon.DIContainer {
+  final public func register<T>(_ factory: @escaping () -> T)
+  final public func resolve<T>() -> T
+  final public func resolve<T>(_ objType: T.Type) throws -> T
+  final public func register<T>(interface: T.Type, implement: @escaping () -> Any)
+  final public func registerSingleton<T>(interface: T.Type, instance: T)
+}
+extension MCommon.DIContainer {
+  public static func registerCommonDependency(appGroupName: Swift.String = "")
+}
+@propertyWrapper public class Injected<T> {
+  public var wrappedValue: T
+  public init()
+  @objc deinit
+}
+public struct DefaultBody<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public let resultCode: Swift.Int
+  public let resultMessage: Swift.String
+  public let resultData: T?
+  public let paging: MCommon.DefaultBody<T>.Paging?
+  public struct Paging : Swift.Codable {
+    public let size: Swift.Int
+    public let page: Swift.Int
+    public let pageCount: Swift.Int
+    public let totalRowCount: Swift.Int
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EdgeTokenResultData : Swift.Codable {
+  public let edgeToken: Swift.String
+  public let edgeTokenAvailableTime: Swift.Double
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DefaultHeader : Swift.Codable {
+  public let service: Swift.String?
+  public let deviceId: Swift.String?
+  public let deviceType: Swift.String?
+  public let osType: Swift.String?
+  public let appId: Swift.String?
+  public let msgId: Swift.String?
+  public let source: Swift.String?
+  public let destination: Swift.String?
+  public var edgeId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(service: Swift.String, deviceId: Swift.String, deviceType: Swift.String, osType: Swift.String, appId: Swift.String, msgId: Swift.String, source: Swift.String, destination: Swift.String, edgeId: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(service: Swift.String, appID: Swift.String, edgeID: Swift.String?)
+  #endif
+  public var JSONParam: [Swift.String : Any] {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DefaultResponse<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public let header: MCommon.DefaultHeader
+  public let body: T
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum EdgeAgentErrorType : Swift.Error {
+  case needVerify
+  case notFoundAppID
+  case notFoundSDKOption
+  case decodingError
+  case notFoundEdgeToken
+  case verifyRequestRetryFailed
+  case notFoundDeployModel
+  case notFoundPolicyModel
+  case noneRegisteredService
+  case convertError
+  public static func == (a: MCommon.EdgeAgentErrorType, b: MCommon.EdgeAgentErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MCommon.EdgeAgentErrorType : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public struct EdgeAgentProviderError : Swift.Error {
+  public static let edgeTokenError: MCommon.EdgeAgentProviderError
+  public static let edgeTokenTimeOut: MCommon.EdgeAgentProviderError
+  public static let notFoundDeployURL: MCommon.EdgeAgentProviderError
+  public static let notFoundPolicyURL: MCommon.EdgeAgentProviderError
+  public static let emptyData: MCommon.EdgeAgentProviderError
+  public let errorMessage: Swift.String
+  public var requestUrl: Swift.String?
+  public var errorCode: Swift.String?
+  public var errorSymptom: Swift.String?
+  public var errorLog: Swift.String?
+  public var errorReason: Swift.String?
+  public var errorSolution: Swift.String?
+  public var errorType: (any Swift.Error)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(errorMessage: Swift.String, requestUrl: Swift.String? = nil, errorCode: Swift.String? = nil, errorSymptom: Swift.String? = nil, errorLog: Swift.String? = nil, errorReason: Swift.String? = nil, errorSolution: Swift.String? = nil, errorType: (any Swift.Error)? = nil)
+  #endif
+}
+public enum EdgeAgentError : Swift.Error {
+  case edgeAgent(message: Swift.String?, code: Swift.Int?)
+  case invalidBaseSettings(message: Swift.String?)
+}
+extension MCommon.EdgeAgentError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var localizedDescription: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var resultCode: Swift.Int? {
+    get
+  }
+  #endif
+}
+public struct EdgeDevice {
+  public static var os: [Swift.String : Any] {
+    get
+  }
+  public static var deviceType: Swift.String {
+    get
+  }
+}
+public struct MACPolicyDTO : Swift.Codable {
+  public let result: Swift.Int
+  public let errorDescription: Swift.String
+  public let integrity: MCommon.MACPolicyDTO.Integrity
+  public let collection: MCommon.MACPolicyDTO.Collection
+  public let error: Swift.String
+  public struct Collection : Swift.Codable {
+    public let version: Swift.String?
+    public let resultURL: Swift.String
+    public let policies: [MCommon.MACPolicyDTO.Policy]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Policy : Swift.Codable {
+    public let logType: Swift.String, id: Swift.String
+    public let rules: [MCommon.MACPolicyDTO.Rule]
+    public let collectOption: MCommon.MACPolicyDTO.CollectOption
+    public let name: Swift.String
+    public let threshold: MCommon.MACPolicyDTO.Threshold
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct CollectOption : Swift.Codable {
+    public let collectType: Swift.String
+    public let interval: Swift.Int
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Rule : Swift.Codable {
+    public let operation: Swift.String
+    public let parameter: MCommon.MACPolicyDTO.Parameter
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Parameter : Swift.Codable {
+    public let levels: [MCommon.MACPolicyDTO.EventID]?
+    public let source: Swift.String?
+    public let eventIDS: [MCommon.MACPolicyDTO.EventID]?
+    public let eventIDs: [Swift.String]?
+    public let method: Swift.String?
+    public let args: MCommon.MACPolicyDTO.Args?
+    public let query: Swift.String?
+    public let properties: MCommon.MACPolicyDTO.Properties?
+    public let queryName: Swift.String?, subKeyName: Swift.String?
+    public let valueNames: [Swift.String]?
+    public let hiveName: Swift.String?, provider: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Args : Swift.Codable {
+    public let states: [Swift.String]?
+    public let keyName: Swift.String?
+    public let cpuLoad: Swift.Bool?
+    public let moduleCollectionMode: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Threshold : Swift.Codable {
+    public let upload: MCommon.MACPolicyDTO.Upload
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Upload : Swift.Codable {
+    public let count: Swift.Int, interval: Swift.Int, size: Swift.Int
+    public let compression: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Integrity : Swift.Codable {
+    public let url: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum EventID : Swift.Codable {
+    case integer(Swift.Int)
+    case string(Swift.String)
+    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+  }
+  public struct Properties : Swift.Codable {
+    public let status: Swift.String?, version: Swift.String?, osArchitecture: Swift.String?, csdVersion: Swift.String?
+    public let serialNumber: Swift.String?, caption: Swift.String?, totalVisibleMemorySize: Swift.String?, totalVirtualMemorySize: Swift.String?
+    public let name: Swift.String?, lastBootUpTime: Swift.String?, manufacturer: Swift.String?, model: Swift.String?
+    public let systemType: Swift.String?, addressWidth: Swift.String?, threadCount: Swift.String?, numberOfCores: Swift.String?
+    public let dataWidth: Swift.String?, architecture: Swift.String?, maxClockSpeed: Swift.String?, speed: Swift.String?
+    public let memoryType: Swift.String?, capacity: Swift.String?, bankLabel: Swift.String?, deviceLocator: Swift.String?
+    public let mediaType: Swift.String?, size: Swift.String?, interfaceType: Swift.String?, needsCleaning: Swift.String?
+    public let displayName: Swift.String?, estimatedSize: Swift.String?, displayVersion: Swift.String?, publisher: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MobilePolicyDTO : Swift.Codable {
+  public let collection: MCommon.MobilePolicyDTO.Collection
+  public struct Collection : Swift.Codable {
+    public let policies: [MCommon.MobilePolicyDTO.Policy]
+    public let resultURL: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Policy : Swift.Codable {
+    public let id: Swift.String, name: Swift.String, logType: Swift.String
+    public let rules: [MCommon.MobilePolicyDTO.Rule]
+    public let collectOption: MCommon.MobilePolicyDTO.CollectOption
+    public let threshold: MCommon.MobilePolicyDTO.Threshold
+    public let uploadOption: MCommon.MobilePolicyDTO.UploadOption
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct CollectOption : Swift.Codable {
+    public let collectType: Swift.String
+    public let interval: Swift.Int
+    public let cron: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Rule : Swift.Codable {
+    public let operation: Swift.String
+    public let parameter: MCommon.MobilePolicyDTO.Parameter
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Parameter : Swift.Codable {
+    public let minAppVersion: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Threshold : Swift.Codable {
+    public let upload: MCommon.MobilePolicyDTO.Upload
+    public let queue: MCommon.MobilePolicyDTO.Queue
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Queue : Swift.Codable {
+    public let size: Swift.String, count: Swift.String, retentionTime: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Upload : Swift.Codable {
+    public let interval: Swift.Int, size: Swift.Int, count: Swift.Int, delay: Swift.Int
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct UploadOption : Swift.Codable {
+    public let size: Swift.String, count: Swift.String, compress: Swift.String, delay: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Constants {
+  public static let uuidKey: Swift.String
+  public static let srouce: Swift.String
+  public static let iosType: Swift.String
+  public static let macOsType: Swift.String
+  public static let edgeIdKey: Swift.String
+  public static let commonDestination: Swift.String
+  public static let tokenAvailableTime: Swift.Double
+  public static let nanoSecond: [Swift.UInt64]
+}
+public struct TokenRefreshInfo {
+  public let moduleType: MCommon.TokenModuleType
+  public let requestId: Swift.String
+  public let timestamp: Foundation.Date
+}
+public protocol AgentServiceTargetType {
+  static var serviceName: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func setBaseURL(_ baseURL: Swift.String, rootContext: Swift.String?)
+  #endif
+}
+extension MCommon.AgentServiceTargetType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setBaseURL(_ baseURL: Swift.String, rootContext: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static var baseURL: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static var rootContext: Swift.String? {
+    get
+  }
+  #endif
+}
+extension MCommon.AgentServiceTargetType {
+  public var defaultHeaderFromEdgeConfig: [Swift.String : Any] {
+    get
+  }
+  public func defaultHeaderFromEdgeConfig(serviceName: Swift.String) -> [Swift.String : Any]
+}
+public protocol NetworkManagerType {
+  var tokenWaitTimeOut: Swift.UInt64 { get set }
+  func setTokenModuleType(_ tokenModuleType: MCommon.TokenModuleType)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func getAccessToken() async -> Swift.String?
+  #endif
+  func setAccessToken(token: Swift.String, availableTime: Swift.Double) async
+  #if compiler(>=5.3) && $NonescapableTypes
+  func request(_ target: any MNetwork.TargetType) async -> (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func requestJson(_ target: any MNetwork.TargetType) async -> ([Swift.String : Any]?, Foundation.URLResponse?, (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func requestObject<T>(_ target: any MNetwork.TargetType, type: T.Type) async -> (T?, Foundation.URLResponse?, (any Swift.Error)?) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func requestWithTokenRetry(_ targetBuilder: @escaping (Swift.String?) -> any MNetwork.TargetType) async -> (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func requestJsonWithTokenRetry(_ targetBuilder: @escaping (Swift.String?) -> any MNetwork.TargetType) async -> ([Swift.String : Any]?, Foundation.URLResponse?, (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func requestObjectWithTokenRetry<T>(_ targetBuilder: @escaping (Swift.String?) -> any MNetwork.TargetType, type: T.Type) async -> (T?, Foundation.URLResponse?, (any Swift.Error)?) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  var sseManager: any MNetwork.SseSessionManagerType { get }
+  func requestSse(_ target: any MNetwork.TargetType) async throws
+  func disconnectSse()
+}
+public enum TokenModuleType : Swift.CaseIterable {
+  case core, push, crash
+  public static func == (a: MCommon.TokenModuleType, b: MCommon.TokenModuleType) -> Swift.Bool
+  public typealias AllCases = [MCommon.TokenModuleType]
+  nonisolated public static var allCases: [MCommon.TokenModuleType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol NotificationManagerType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeTokenRefreshRequest: Combine.AnyPublisher<MCommon.TokenRefreshInfo?, Swift.Never> { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeUserLoginSuccess: Combine.AnyPublisher<Swift.Void?, Swift.Never> { get }
+  #endif
+  func postTokenRefreshRequest(_ info: MCommon.TokenRefreshInfo)
+  func postUserLoginSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeWillTerminateNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeDidReceiveMemoryWarnigNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeWillResignActiveNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeDidBecomeActiveNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeWillEnterForegroundNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var observeDidEnterBackgroundNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> { get }
+  #endif
+  func postWillTerminateNotification()
+  func postDidReceiveMemoryWarnigNotification()
+  func postWillResignActiveNotification()
+  func postDidBecomeActiveNotification()
+  func postWillEnterForegroundNotification()
+  func postDidEnterBackgroundNotification()
+}
+@_hasMissingDesignatedInitializers final public class NotificationManager : MCommon.NotificationManagerType {
+  @objc deinit
+}
+extension MCommon.NotificationManager {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeTokenRefreshRequest: Combine.AnyPublisher<MCommon.TokenRefreshInfo?, Swift.Never> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeUserLoginSuccess: Combine.AnyPublisher<Swift.Void?, Swift.Never> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeWillTerminateNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeDidReceiveMemoryWarnigNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeWillResignActiveNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeDidBecomeActiveNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeWillEnterForegroundNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var observeDidEnterBackgroundNotification: Combine.AnyPublisher<Swift.Void?, Swift.Never> {
+    get
+  }
+  #endif
+}
+extension MCommon.NotificationManager {
+  final public func postTokenRefreshRequest(_ info: MCommon.TokenRefreshInfo)
+  final public func postUserLoginSuccess()
+  final public func postWillTerminateNotification()
+  final public func postDidReceiveMemoryWarnigNotification()
+  final public func postWillResignActiveNotification()
+  final public func postDidBecomeActiveNotification()
+  final public func postWillEnterForegroundNotification()
+  final public func postDidEnterBackgroundNotification()
+}
+public struct NotificationKey<T> {
+  public typealias Key<U> = MCommon.NotificationKey<U>
+  public let key: Swift.String
+}
+extension MCommon.NotificationKey : Swift.ExpressibleByStringLiteral {
+  public init(unicodeScalarLiteral value: Swift.StringLiteralType)
+  public init(extendedGraphemeClusterLiteral value: Swift.StringLiteralType)
+  public init(stringLiteral value: Swift.StringLiteralType)
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+  public typealias StringLiteralType = Swift.StringLiteralType
+  public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+}
+extension MCommon.NotificationKey {
+  public static var tokenRefreshRequest: MCommon.NotificationKey<T>.Key<MCommon.TokenRefreshInfo> {
+    get
+  }
+  public static var edgeUserLoginSuccess: MCommon.NotificationKey<T>.Key<Swift.Void> {
+    get
+  }
+  public static var WillTerminateNotification: MCommon.NotificationKey<T>.Key<Swift.Void> {
+    get
+  }
+  public static var DidReceiveMemoryWarnigNotification: MCommon.NotificationKey<T>.Key<Swift.Void> {
+    get
+  }
+  public static var WillResignActiveNotification: MCommon.NotificationKey<T>.Key<Swift.Void> {
+    get
+  }
+  public static var DidBecomeActiveNotification: MCommon.NotificationKey<T>.Key<Swift.Void> {
+    get
+  }
+  public static var WillEnterForegroundNotification: MCommon.NotificationKey<T>.Key<Swift.Void> {
+    get
+  }
+  public static var DidEnterBackgroundNotification: MCommon.NotificationKey<T>.Key<Swift.Void> {
+    get
+  }
+}
+public protocol UserDefaultManagerType : AnyObject {
+  var _appVersion: Swift.String { get }
+  var _pushConsent: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var _edgeIdKey: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var _userID: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var _userName: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var _userDeptCode: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var _userDeptName: Swift.String? { get }
+  #endif
+  func setAppVersion(version: Swift.String)
+  func setPushConsent(bool: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setEdgeIdKey(version: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setUserID(userID: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setUserName(userName: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setUserDeptCode(userDeptCode: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setUserDeptName(userDeptName: Swift.String?)
+  #endif
+}
+final public class UserDefaultManager : MCommon.UserDefaultManagerType {
+  public init(userDefault: any MCommon.UserDefaultsServiceType = UserDefaultsService())
+  @objc deinit
+}
+extension MCommon.UserDefaultManager {
+  final public var _appVersion: Swift.String {
+    get
+  }
+  final public var _pushConsent: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var _edgeIdKey: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var _userID: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var _userName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var _userDeptCode: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var _userDeptName: Swift.String? {
+    get
+  }
+  #endif
+}
+extension MCommon.UserDefaultManager {
+  final public func setAppVersion(version: Swift.String)
+  final public func setPushConsent(bool: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setEdgeIdKey(version: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setUserID(userID: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setUserName(userName: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setUserDeptCode(userDeptCode: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setUserDeptName(userDeptName: Swift.String?)
+  #endif
+}
+public protocol UserDefaultsServiceType : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func value<T>(forKey key: MCommon.UserDefaultsKey<T>) -> T?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func set<T>(value: T?, forKey key: MCommon.UserDefaultsKey<T>)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func getObject<T>(forKey key: MCommon.UserDefaultsKey<T>) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setObject<T>(value: T?, forKey key: MCommon.UserDefaultsKey<T>) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  func removeAll()
+}
+final public class UserDefaultsService : MCommon.UserDefaultsServiceType {
+  public init(appGroupName: Swift.String = Bundle.edgeBundleID)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func value<T>(forKey key: MCommon.UserDefaultsKey<T>) -> T?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func set<T>(value: T?, forKey key: MCommon.UserDefaultsKey<T>)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getObject<T>(forKey key: MCommon.UserDefaultsKey<T>) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setObject<T>(value: T?, forKey key: MCommon.UserDefaultsKey<T>) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  final public func removeAll()
+  @objc deinit
+}
+public struct UserDefaultsKey<T> {
+  public typealias Key<U> = MCommon.UserDefaultsKey<U>
+  public let key: Swift.String
+}
+extension MCommon.UserDefaultsKey : Swift.ExpressibleByStringLiteral {
+  public init(unicodeScalarLiteral value: Swift.StringLiteralType)
+  public init(extendedGraphemeClusterLiteral value: Swift.StringLiteralType)
+  public init(stringLiteral value: Swift.StringLiteralType)
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+  public typealias StringLiteralType = Swift.StringLiteralType
+  public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+}
+extension MCommon.UserDefaultsKey {
+  public static var appVersion: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var pushConsent: MCommon.UserDefaultsKey<T>.Key<Swift.Bool> {
+    get
+  }
+  public static var edgeIdKey: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var userID: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var userName: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var userDeptCode: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var userDeptName: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class UserDefaultServiceMock : MCommon.UserDefaultsServiceType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func value<T>(forKey key: MCommon.UserDefaultsKey<T>) -> T?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func set<T>(value: T?, forKey key: MCommon.UserDefaultsKey<T>)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getObject<T>(forKey key: MCommon.UserDefaultsKey<T>) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setObject<T>(value: T?, forKey key: MCommon.UserDefaultsKey<T>) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  final public func removeAll()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class EdgeAgentConfig {
+  public static let shared: MCommon.EdgeAgentConfig
+  final public var active: Swift.String? {
+    get
+  }
+  final public var appID: Swift.String? {
+    get
+  }
+  final public var serverURL: Swift.String? {
+    get
+  }
+  final public var rootContext: Swift.String? {
+    get
+  }
+  final public var debug: Swift.Bool {
+    get
+  }
+  final public var useSSE: Swift.Bool {
+    get
+  }
+  final public var useAppUpdate: Swift.Bool {
+    get
+  }
+  final public var edgeID: Swift.String? {
+    get
+  }
+  final public var userID: Swift.String? {
+    get
+  }
+  final public var userName: Swift.String? {
+    get
+  }
+  final public var departCode: Swift.String? {
+    get
+  }
+  final public var departName: Swift.String? {
+    get
+  }
+  final public var baseURL: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setConfig(active: Swift.String, appID: Swift.String, serverURL: Swift.String, rootContext: Swift.String? = nil)
+  #endif
+  final public func setDebug(_ debug: Swift.Bool)
+  final public func setUseSSE(_ useSSE: Swift.Bool)
+  final public func setUseAppUpdate(_ useAppUpdate: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setEdgeID(_ edgeID: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setLoginUserInfo(userID: Swift.String?, userName: Swift.String?, departCode: Swift.String?, departName: Swift.String?)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class EdgeAgentSettings {
+  public static let SOURCE: Swift.String
+  public static let DESTINATION: Swift.String
+  public static let OS_TYPE: Swift.String
+  public static let shared: MCommon.EdgeAgentSettings
+  final public var edgeCrashPolicy: MCommon.MobilePolicyDTO? {
+    get
+  }
+  final public var edgeId: Swift.String {
+    get
+  }
+  final public var edgeToken: Swift.String {
+    get
+  }
+  final public var deviceID: Swift.String {
+    get
+  }
+  final public var deviceType: Swift.String {
+    get
+  }
+  final public var appVersion: Swift.String {
+    get
+  }
+  final public var edgeAgentVersion: Swift.String {
+    get
+  }
+  final public var appVersionCode: Swift.String {
+    get
+  }
+  final public var userID: Swift.String? {
+    get
+  }
+  final public var userName: Swift.String? {
+    get
+  }
+  final public var deptCode: Swift.String? {
+    get
+  }
+  final public var deptName: Swift.String? {
+    get
+  }
+  final public var appName: Swift.String? {
+    get
+  }
+  final public var networkOperatorName: Swift.String? {
+    get
+  }
+  final public var deviceLanguage: Swift.String? {
+    get
+  }
+  final public func setEdgeCrashPolicy(_ data: MCommon.MobilePolicyDTO)
+  final public func updateEdgeId(_ value: Swift.String)
+  final public func updateEdgeToken(_ value: Swift.String)
+  final public func updateDeviceID(_ value: Swift.String)
+  final public func updateDeviceType(_ value: Swift.String)
+  final public func updateAppVersion(_ value: Swift.String)
+  final public func updateEdgeAgentVersion(_ value: Swift.String)
+  final public func updateAppVersionCode(_ value: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateUserID(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateUserName(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateDeptCode(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateDeptName(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateAppName(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateNetworkOperatorName(_ value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateDeviceLanguage(_ value: Swift.String?)
+  #endif
+  @objc deinit
+}
+extension MCommon.EdgeAgentErrorType : Swift.Equatable {}
+extension MCommon.EdgeAgentErrorType : Swift.Hashable {}
+extension MCommon.TokenModuleType : Swift.Equatable {}
+extension MCommon.TokenModuleType : Swift.Hashable {}

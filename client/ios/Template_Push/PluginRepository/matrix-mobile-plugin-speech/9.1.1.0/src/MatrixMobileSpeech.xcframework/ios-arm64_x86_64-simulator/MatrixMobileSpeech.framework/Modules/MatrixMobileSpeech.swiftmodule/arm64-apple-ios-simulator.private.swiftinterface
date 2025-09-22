@@ -1,0 +1,25 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MatrixMobileSpeech
+import AVFoundation
+import AVKit
+import Foundation
+@_exported import MatrixMobileSpeech
+import Matrix_Mobile
+import Speech
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SpeechManager : ObjectiveC.NSObject {
+  @objc deinit
+}
+extension MatrixMobileSpeech.SpeechManager : AVFAudio.AVSpeechSynthesizerDelegate {
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: Foundation.NSRange, utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didStart utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didPause utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didContinue utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didCancel utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didFinish utterance: AVFAudio.AVSpeechUtterance)
+}

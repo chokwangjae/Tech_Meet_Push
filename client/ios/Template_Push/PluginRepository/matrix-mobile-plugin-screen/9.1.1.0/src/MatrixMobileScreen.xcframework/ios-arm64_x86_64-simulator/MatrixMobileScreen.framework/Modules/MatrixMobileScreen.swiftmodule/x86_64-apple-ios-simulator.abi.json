@@ -1,0 +1,333 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileScreen",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileScreen",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileScreen"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileScreen"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileScreen"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 164,
+      "length": 6,
+      "value": "\"2010\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 6,
+      "value": "\"2011\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 235,
+      "length": 6,
+      "value": "\"2012\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 6,
+      "value": "\"2019\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 6,
+      "value": "\"2013\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 6,
+      "value": "\"2018\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 389,
+      "length": 6,
+      "value": "\"2020\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 423,
+      "length": 6,
+      "value": "\"2017\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 458,
+      "length": 6,
+      "value": "\"2021\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 6,
+      "value": "\"2024\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 6,
+      "value": "\"2025\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 164,
+      "length": 6,
+      "value": "\"2010\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 6,
+      "value": "\"2011\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 235,
+      "length": 6,
+      "value": "\"2012\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 6,
+      "value": "\"2019\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 6,
+      "value": "\"2013\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 6,
+      "value": "\"2018\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 389,
+      "length": 6,
+      "value": "\"2020\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 423,
+      "length": 6,
+      "value": "\"2017\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 458,
+      "length": 6,
+      "value": "\"2021\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 6,
+      "value": "\"2024\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 6,
+      "value": "\"2025\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 365,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 5,
+      "value": "24680"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 477,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 540,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 47,
+      "value": "\"MatrixMobileScreenPlugin_\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5103,
+      "length": 4,
+      "value": "0x2A"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5153,
+      "length": 4,
+      "value": "0x2D"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5163,
+      "length": 4,
+      "value": "0x2E"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5215,
+      "length": 4,
+      "value": "0x30"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5225,
+      "length": 4,
+      "value": "0x39"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5280,
+      "length": 4,
+      "value": "0x41"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5290,
+      "length": 4,
+      "value": "0x5A"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5331,
+      "length": 4,
+      "value": "0x5F"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5382,
+      "length": 4,
+      "value": "0x61"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5392,
+      "length": 4,
+      "value": "0x7A"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileScreen\/9.1.1.0\/MatrixMobileScreen\/MatrixMobileScreenPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 5431,
+      "length": 3,
+      "value": "\" \""
+    }
+  ]
+}

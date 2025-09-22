@@ -1,0 +1,130 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MatrixMobileNetwork",
+    "printedName": "MatrixMobileNetwork",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileNetwork"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/Reachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/Reachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/Reachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 376,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 41,
+      "value": "\"kNetworkReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/MatrixMobileNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 429,
+      "length": 41,
+      "value": "\"kNetworkReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/MatrixMobileNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 658,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/MatrixMobileNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/MatrixMobileNetwork.swift",
+      "kind": "BooleanLiteral",
+      "offset": 786,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileNetwork\/9.2.1.0\/MatrixMobileNetwork\/MatrixMobileNetwork.swift",
+      "kind": "BooleanLiteral",
+      "offset": 820,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module MatrixMobileNetwork {
+  umbrella header "MatrixMobileNetwork.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileNetwork.Swift {
+  header "MatrixMobileNetwork-Swift.h"
+  requires objc
+}

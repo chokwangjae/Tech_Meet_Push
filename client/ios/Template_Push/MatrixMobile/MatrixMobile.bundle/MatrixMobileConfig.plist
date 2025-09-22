@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Template</key>
+	<dict>
+		<key>serverGroups</key>
+		<dict>
+			<key>Release</key>
+			<array>
+				<dict>
+					<key>appID</key>
+					<string>matrix.mobile.mre</string>
+					<key>localWebServerPort</key>
+					<string>24680</string>
+					<key>name</key>
+					<string>Sample</string>
+					<key>url</key>
+					<string>https://mre.inswave.kr</string>
+				</dict>
+			</array>
+		</dict>
+		<key>startServerGroupName</key>
+		<string>Release</string>
+		<key>useServerSelectScreen</key>
+		<false/>
+	</dict>
+	<key>target</key>
+	<string>Template</string>
+</dict>
+</plist>

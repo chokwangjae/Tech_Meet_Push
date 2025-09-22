@@ -1,0 +1,67 @@
+/* 
+  Localizable.strings
+  Template
+
+  Created by Inswave Systems on 2017. 12. 11..
+  
+*/
+
+/*ErrorMessage*/
+"error_N000" = "サーバーで環境の照会に失敗しました。しばらくしてからもう一度お試しください。";
+"error_N001" = "サーバーからの応答がありません。しばらくしてから再度お試しください。";
+"error_N002" = "Websquare Engine JSファイルの生成に失敗しました。";
+"error_N003" = "サーバーとアプリのApp IDが一致しません。サーバー管理者にお問い合わせください。";
+"error_N004" = "サーバーエラーが発生しました。";
+"error_N005" = "W-Matrixの起動に失敗しました。";
+"error_N006" = "サーバーリストの構成に失敗しました。";
+
+"error_F000" = "Assetsのコピーに失敗しました。";
+"error_F001" = "エンジンZIPファイルの解凍に失敗しました。";
+"error_F002" = "リソースZIPファイルの解凍に失敗しました。";
+"error_F003" = "Custom Update ZIPファイルの解凍に失敗しました。";
+"error_F004" = "Refresh Update ZIPファイルの解凍に失敗しました。";
+"error_F005" = "Refresh Update Hash Tableが無効です。";
+"error_F006" = "Refresh Updateの対象ファイルのダウンロードに失敗しました。";
+"error_F007" = "Websquareライセンスが有効ではありません。";
+"error_F008" = "InAppUpdateの画像の読み込みに失敗しました。";
+
+"error_W1004" = "W-Matrix Licenseが有効ではありません。";
+"error_W1005" = "WebViewの作成に失敗しました。";
+
+"error_O1000" = "オフラインモードの設定中にエラーが発生しました。";
+"error_O1001" = "オフラインモードを使用するためのW-Matrix設定がされていません。";
+
+/*UX Message*/
+"FINISH" = "終了";
+"OK" = "OK";
+"CANCEL" = "キャンセル";
+"EXEC" = "確認";
+"CLOSE" = "閉じる";
+"SETTINGS" = "設定";
+"RESTART" = "再起動";
+
+"ENTER_SERVER_INFO" = "サーバー情報入力";
+"EDIT_SERVER_INFO" = "サーバー情報の修正";
+"NO_SERVER_GROUP_SELECT" = "選択されたサーバーがありません。";
+"ENTER_SERVER" = "サーバーアドレスを入力してください。";
+"ENTER_ALL_VALUE" = "すべての入力値を入力してください。";
+"CHECK_PORT" = "ポート番号を確認してください。";
+
+"OFFLINE_FIRSTEXEC" = "オフラインモードはオンラインモードで初回実行後に使用可能です。アプリを終了します。";
+"OFFLINE_ALERT" = "ネットワークに接続されていません。オフラインモードで実行しますか？一部の機能が制限される可能性があります。";
+
+"permission_denied" = "権限の使用に同意していただけない場合、アプリを起動することができません。";
+"permission_denied_rationale" = "権限の使用が停止されています。\nアプリを再インストールするか、設定でアプリの初期化を行った後、実行してください。";
+"error_finish" = "終了";
+"error_retry" = "再試行";
+"exit_or_not" = "終了しますか？";
+"app_init" = "アプリが初期化された後、終了します。";
+"copying_resource" = "必要なファイルをコピーしています。";
+"CHECK_REFRESH_UPDATE_PROGRESS" = "変更内容を確認中です。";
+"CHECK_REFRESH_UPDATE_PROGRESS_RESTART" = "変更を適用するためにAppを再起動する必要があります。\nAppを終了します。";
+"INAPPUPDATE_SIZE_MSG" = "追加で%@をダウンロードします。\n続行しますか？";
+
+/*CameraPlugin*/
+"CAMERA_PERMISSION_REJECT_CONFIRM" = "カメラへのアクセスが禁止されています。続行するには設定アプリで有効にしてください";
+"PHOTOLIBRARY_PERMISSION_REJECT_CONFIRM" = "フォトライブラリーへのアクセスが禁止されています。続行するには設定アプリで有効にしてください";
+

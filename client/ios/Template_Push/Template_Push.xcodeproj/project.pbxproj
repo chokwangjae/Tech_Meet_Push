@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		669D380B2914D12400342B5D /* MatrixMobile.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 669D38032914D12300342B5D /* MatrixMobile.bundle */; };
+		920C8C1F2E56E6530003DFCB /* ZipArchive.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920C8C0D2E56E6520003DFCB /* ZipArchive.xcframework */; };
+		920C8C202E56E6530003DFCB /* ZipArchive.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 920C8C0D2E56E6520003DFCB /* ZipArchive.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		920C8C3B2E56E6900003DFCB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 920C8C3A2E56E6900003DFCB /* Lottie */; };
+		92E3C0632E5847CF00987712 /* Template_Push_Noti.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9277E35B2DD5AEE200D65D7D /* Template_Push_Noti.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AFBE51E27BB8CEB006CF96C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AFBE51D27BB8CEB006CF96C /* README.md */; };
+		E91128832E66B00A005940D3 /* MatrixMobileApp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E911287A2E66B00A005940D3 /* MatrixMobileApp.xcframework */; };
+		E91128842E66B00A005940D3 /* MatrixMobileCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E911287C2E66B00A005940D3 /* MatrixMobileCamera.xcframework */; };
+		E91128852E66B00A005940D3 /* MatrixMobileDevice.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E911287E2E66B00A005940D3 /* MatrixMobileDevice.xcframework */; };
+		E91128862E66B00A005940D3 /* MatrixMobileNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91128802E66B00A005940D3 /* MatrixMobileNetwork.xcframework */; };
+		E91128872E66B00A005940D3 /* MatrixMobileApp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E911287A2E66B00A005940D3 /* MatrixMobileApp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E91128882E66B00A005940D3 /* MatrixMobileCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E911287C2E66B00A005940D3 /* MatrixMobileCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E91128892E66B00A005940D3 /* MatrixMobileDevice.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E911287E2E66B00A005940D3 /* MatrixMobileDevice.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E911288A2E66B00A005940D3 /* MatrixMobileNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E91128802E66B00A005940D3 /* MatrixMobileNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E94C9C002E618E3000752B18 /* GCDWebServers.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94C9BFC2E61844600752B18 /* GCDWebServers.xcframework */; };
+		E94C9C012E618E3000752B18 /* GCDWebServers.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94C9BFC2E61844600752B18 /* GCDWebServers.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E94C9C022E618E3300752B18 /* Matrix_Mobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94C9BFA2E61833400752B18 /* Matrix_Mobile.xcframework */; };
+		E94C9C032E618E3300752B18 /* Matrix_Mobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94C9BFA2E61833400752B18 /* Matrix_Mobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E98D67312E72676E00037531 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E98D67302E72676E00037531 /* FirebaseMessaging */; };
+		E99BB6122E5E94DF000601A6 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E99BB6112E5E94DF000601A6 /* FirebaseMessaging */; };
+		E9E30F5A2E7B7AD50024901C /* MatrixPush.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F522E7B7ACF0024901C /* MatrixPush.xcframework */; };
+		E9E30F5B2E7B7AD50024901C /* MatrixPush.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F522E7B7ACF0024901C /* MatrixPush.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E30F5C2E7B7AD70024901C /* MCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F532E7B7ACF0024901C /* MCommon.xcframework */; };
+		E9E30F5D2E7B7AD70024901C /* MCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F532E7B7ACF0024901C /* MCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E30F5E2E7B7AD80024901C /* MNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F542E7B7ACF0024901C /* MNetwork.xcframework */; };
+		E9E30F5F2E7B7AD80024901C /* MNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F542E7B7ACF0024901C /* MNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E30F602E7B7AD90024901C /* MUtil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F552E7B7ACF0024901C /* MUtil.xcframework */; };
+		E9E30F612E7B7AD90024901C /* MUtil.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E30F552E7B7ACF0024901C /* MUtil.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		66BE91BA29AD8ED90049AA97 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		92E3C0642E5847CF00987712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AFBC17627B4A32300E315F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9277E35A2DD5AEE200D65D7D;
+			remoteInfo = Template_Push_Noti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		920C8C092E56E6410003DFCB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9E30F612E7B7AD90024901C /* MUtil.xcframework in Embed Frameworks */,
+				E94C9C012E618E3000752B18 /* GCDWebServers.xcframework in Embed Frameworks */,
+				E91128872E66B00A005940D3 /* MatrixMobileApp.xcframework in Embed Frameworks */,
+				E9E30F5D2E7B7AD70024901C /* MCommon.xcframework in Embed Frameworks */,
+				E9E30F5B2E7B7AD50024901C /* MatrixPush.xcframework in Embed Frameworks */,
+				E91128882E66B00A005940D3 /* MatrixMobileCamera.xcframework in Embed Frameworks */,
+				E91128892E66B00A005940D3 /* MatrixMobileDevice.xcframework in Embed Frameworks */,
+				E9E30F5F2E7B7AD80024901C /* MNetwork.xcframework in Embed Frameworks */,
+				E911288A2E66B00A005940D3 /* MatrixMobileNetwork.xcframework in Embed Frameworks */,
+				920C8C202E56E6530003DFCB /* ZipArchive.xcframework in Embed Frameworks */,
+				E94C9C032E618E3300752B18 /* Matrix_Mobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E3C0662E5847CF00987712 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				92E3C0632E5847CF00987712 /* Template_Push_Noti.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		669D38032914D12300342B5D /* MatrixMobile.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MatrixMobile.bundle; sourceTree = "<group>"; };
+		920C8C0D2E56E6520003DFCB /* ZipArchive.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:YXHXABBUG5:Inswave Systems Co. Ltd"; lastKnownFileType = wrapper.xcframework; name = ZipArchive.xcframework; path = ../FrameworkProj/Lib/ZipArchive.xcframework; sourceTree = "<group>"; };
+		9277E35B2DD5AEE200D65D7D /* Template_Push_Noti.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Template_Push_Noti.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFBC17E27B4A32300E315F3 /* Template_Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template_Push.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFBE51D27BB8CEB006CF96C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E911287A2E66B00A005940D3 /* MatrixMobileApp.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:YXHXABBUG5:Inswave Systems Co. Ltd"; lastKnownFileType = wrapper.xcframework; path = MatrixMobileApp.xcframework; sourceTree = "<group>"; };
+		E911287C2E66B00A005940D3 /* MatrixMobileCamera.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:YXHXABBUG5:Inswave Systems Co. Ltd"; lastKnownFileType = wrapper.xcframework; path = MatrixMobileCamera.xcframework; sourceTree = "<group>"; };
+		E911287E2E66B00A005940D3 /* MatrixMobileDevice.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:YXHXABBUG5:Inswave Systems Co. Ltd"; lastKnownFileType = wrapper.xcframework; path = MatrixMobileDevice.xcframework; sourceTree = "<group>"; };
+		E91128802E66B00A005940D3 /* MatrixMobileNetwork.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:YXHXABBUG5:Inswave Systems Co. Ltd"; lastKnownFileType = wrapper.xcframework; path = MatrixMobileNetwork.xcframework; sourceTree = "<group>"; };
+		E94C9BFA2E61833400752B18 /* Matrix_Mobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Matrix_Mobile.xcframework; path = ../FrameworkProj/Lib/Matrix_Mobile.xcframework; sourceTree = SOURCE_ROOT; };
+		E94C9BFC2E61844600752B18 /* GCDWebServers.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:YXHXABBUG5:Inswave Systems Co. Ltd"; lastKnownFileType = wrapper.xcframework; name = GCDWebServers.xcframework; path = ../FrameworkProj/Lib/GCDWebServers.xcframework; sourceTree = SOURCE_ROOT; };
+		E9E30F522E7B7ACF0024901C /* MatrixPush.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MatrixPush.xcframework; path = ../FrameworkProj/Lib/MatrixPush.xcframework; sourceTree = SOURCE_ROOT; };
+		E9E30F532E7B7ACF0024901C /* MCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MCommon.xcframework; path = ../FrameworkProj/Lib/MCommon.xcframework; sourceTree = SOURCE_ROOT; };
+		E9E30F542E7B7ACF0024901C /* MNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MNetwork.xcframework; path = ../FrameworkProj/Lib/MNetwork.xcframework; sourceTree = SOURCE_ROOT; };
+		E9E30F552E7B7ACF0024901C /* MUtil.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MUtil.xcframework; path = ../FrameworkProj/Lib/MUtil.xcframework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9277E3672DD5AEE200D65D7D /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9277E35A2DD5AEE200D65D7D /* Template_Push_Noti */;
+		};
+		E99BB6002E5E7C3F000601A6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Template_Push-Info.plist",
+			);
+			target = 9AFBC17D27B4A32300E315F3 /* Template_Push */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9277E35C2DD5AEE200D65D7D /* Template_Noti */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9277E3672DD5AEE200D65D7D /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Template_Noti; sourceTree = "<group>"; };
+		E99BB5E42E5E7C3F000601A6 /* Template_Push */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E99BB6002E5E7C3F000601A6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Template_Push; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9277E3582DD5AEE200D65D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98D67312E72676E00037531 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFBC17B27B4A32300E315F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99BB6122E5E94DF000601A6 /* FirebaseMessaging in Frameworks */,
+				E91128832E66B00A005940D3 /* MatrixMobileApp.xcframework in Frameworks */,
+				E91128842E66B00A005940D3 /* MatrixMobileCamera.xcframework in Frameworks */,
+				E91128852E66B00A005940D3 /* MatrixMobileDevice.xcframework in Frameworks */,
+				E9E30F5E2E7B7AD80024901C /* MNetwork.xcframework in Frameworks */,
+				E91128862E66B00A005940D3 /* MatrixMobileNetwork.xcframework in Frameworks */,
+				E9E30F602E7B7AD90024901C /* MUtil.xcframework in Frameworks */,
+				920C8C1F2E56E6530003DFCB /* ZipArchive.xcframework in Frameworks */,
+				E94C9C002E618E3000752B18 /* GCDWebServers.xcframework in Frameworks */,
+				920C8C3B2E56E6900003DFCB /* Lottie in Frameworks */,
+				E9E30F5A2E7B7AD50024901C /* MatrixPush.xcframework in Frameworks */,
+				E9E30F5C2E7B7AD70024901C /* MCommon.xcframework in Frameworks */,
+				E94C9C022E618E3300752B18 /* Matrix_Mobile.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		669D37FC2914D12300342B5D /* MatrixMobile */ = {
+			isa = PBXGroup;
+			children = (
+				E91128822E66B00A005940D3 /* Plugins */,
+				669D38032914D12300342B5D /* MatrixMobile.bundle */,
+			);
+			path = MatrixMobile;
+			sourceTree = "<group>";
+		};
+		9AFBC17527B4A32300E315F3 = {
+			isa = PBXGroup;
+			children = (
+				9AFBE51D27BB8CEB006CF96C /* README.md */,
+				669D37FC2914D12300342B5D /* MatrixMobile */,
+				E99BB5E42E5E7C3F000601A6 /* Template_Push */,
+				9277E35C2DD5AEE200D65D7D /* Template_Noti */,
+				9AFBC17F27B4A32300E315F3 /* Products */,
+				9AFBC18F27B4A42B00E315F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AFBC17F27B4A32300E315F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AFBC17E27B4A32300E315F3 /* Template_Push.app */,
+				9277E35B2DD5AEE200D65D7D /* Template_Push_Noti.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AFBC18F27B4A42B00E315F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9E30F522E7B7ACF0024901C /* MatrixPush.xcframework */,
+				E9E30F532E7B7ACF0024901C /* MCommon.xcframework */,
+				E9E30F542E7B7ACF0024901C /* MNetwork.xcframework */,
+				E9E30F552E7B7ACF0024901C /* MUtil.xcframework */,
+				E94C9BFC2E61844600752B18 /* GCDWebServers.xcframework */,
+				E94C9BFA2E61833400752B18 /* Matrix_Mobile.xcframework */,
+				920C8C0D2E56E6520003DFCB /* ZipArchive.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E911287B2E66B00A005940D3 /* matrix-mobile-plugin-app */ = {
+			isa = PBXGroup;
+			children = (
+				E911287A2E66B00A005940D3 /* MatrixMobileApp.xcframework */,
+			);
+			path = "matrix-mobile-plugin-app";
+			sourceTree = "<group>";
+		};
+		E911287D2E66B00A005940D3 /* matrix-mobile-plugin-camera */ = {
+			isa = PBXGroup;
+			children = (
+				E911287C2E66B00A005940D3 /* MatrixMobileCamera.xcframework */,
+			);
+			path = "matrix-mobile-plugin-camera";
+			sourceTree = "<group>";
+		};
+		E911287F2E66B00A005940D3 /* matrix-mobile-plugin-device */ = {
+			isa = PBXGroup;
+			children = (
+				E911287E2E66B00A005940D3 /* MatrixMobileDevice.xcframework */,
+			);
+			path = "matrix-mobile-plugin-device";
+			sourceTree = "<group>";
+		};
+		E91128812E66B00A005940D3 /* matrix-mobile-plugin-network */ = {
+			isa = PBXGroup;
+			children = (
+				E91128802E66B00A005940D3 /* MatrixMobileNetwork.xcframework */,
+			);
+			path = "matrix-mobile-plugin-network";
+			sourceTree = "<group>";
+		};
+		E91128822E66B00A005940D3 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				E911287B2E66B00A005940D3 /* matrix-mobile-plugin-app */,
+				E911287D2E66B00A005940D3 /* matrix-mobile-plugin-camera */,
+				E911287F2E66B00A005940D3 /* matrix-mobile-plugin-device */,
+				E91128812E66B00A005940D3 /* matrix-mobile-plugin-network */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9277E35A2DD5AEE200D65D7D /* Template_Push_Noti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9277E3682DD5AEE200D65D7D /* Build configuration list for PBXNativeTarget "Template_Push_Noti" */;
+			buildPhases = (
+				9277E3572DD5AEE200D65D7D /* Sources */,
+				9277E3582DD5AEE200D65D7D /* Frameworks */,
+				9277E3592DD5AEE200D65D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9277E35C2DD5AEE200D65D7D /* Template_Noti */,
+			);
+			name = Template_Push_Noti;
+			packageProductDependencies = (
+				E98D67302E72676E00037531 /* FirebaseMessaging */,
+			);
+			productName = Template_Noti;
+			productReference = 9277E35B2DD5AEE200D65D7D /* Template_Push_Noti.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9AFBC17D27B4A32300E315F3 /* Template_Push */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFBC18C27B4A32500E315F3 /* Build configuration list for PBXNativeTarget "Template_Push" */;
+			buildPhases = (
+				9AFBC17A27B4A32300E315F3 /* Sources */,
+				9AFBC17B27B4A32300E315F3 /* Frameworks */,
+				9AFBC17C27B4A32300E315F3 /* Resources */,
+				920C8C092E56E6410003DFCB /* Embed Frameworks */,
+				92E3C0662E5847CF00987712 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+				66BE91BA29AD8ED90049AA97 /* PBXBuildRule */,
+			);
+			dependencies = (
+				92E3C0652E5847CF00987712 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E99BB5E42E5E7C3F000601A6 /* Template_Push */,
+			);
+			name = Template_Push;
+			packageProductDependencies = (
+				920C8C3A2E56E6900003DFCB /* Lottie */,
+				E99BB6112E5E94DF000601A6 /* FirebaseMessaging */,
+			);
+			productName = TemplateSwiftUI;
+			productReference = 9AFBC17E27B4A32300E315F3 /* Template_Push.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AFBC17627B4A32300E315F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9277E35A2DD5AEE200D65D7D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9AFBC17D27B4A32300E315F3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9AFBC17927B4A32300E315F3 /* Build configuration list for PBXProject "Template_Push" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+				ja,
+			);
+			mainGroup = 9AFBC17527B4A32300E315F3;
+			packageReferences = (
+				92FE54D92DD1C8E7003655B5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E99BB6102E5E94DF000601A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 9AFBC17F27B4A32300E315F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AFBC17D27B4A32300E315F3 /* Template_Push */,
+				9277E35A2DD5AEE200D65D7D /* Template_Push_Noti */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9277E3592DD5AEE200D65D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFBC17C27B4A32300E315F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669D380B2914D12400342B5D /* MatrixMobile.bundle in Resources */,
+				9AFBE51E27BB8CEB006CF96C /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9277E3572DD5AEE200D65D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFBC17A27B4A32300E315F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92E3C0652E5847CF00987712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9277E35A2DD5AEE200D65D7D /* Template_Push_Noti */;
+			targetProxy = 92E3C0642E5847CF00987712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9277E3642DD5AEE200D65D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = Template_Noti/Template_Noti.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = YXHXABBUG5;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Template_Noti/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Template_Noti;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "matrix.push.sample.Template-Noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Matrix Push Sample Extension Profile";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9277E3652DD5AEE200D65D7D /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = Template_Noti/Template_Noti.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = YXHXABBUG5;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Template_Noti/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Template_Noti;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "matrix.push.sample.Template-Noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Matrix Push Sample Extension Profile";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		9277E3662DD5AEE200D65D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = Template_Noti/Template_Noti.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = YXHXABBUG5;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Template_Noti/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Template_Noti;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "matrix.push.sample.Template-Noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Matrix Push Sample Extension Profile";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A546983283B40A9007B5DCF /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Test;
+		};
+		9A546984283B40A9007B5DCF /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Template_Push/Template_Push.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Template_Push/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = YXHXABBUG5;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../FrameworkProj/Lib",
+					"$(PROJECT_DIR)/SwiftUISampleProject/Plugins/wmatrix-plugin-network",
+					"$(PROJECT_DIR)/SwiftUISampleProject/Plugins/wmatrix-plugin-camera",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-edgeagent",
+					"$(PROJECT_DIR)/MatrixMobile/Lib",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				INFOPLIST_FILE = "$(SRCROOT)/Template_Push/Template_Push-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_NSCameraUsageDescription = test;
+				INFOPLIST_KEY_NSLocationUsageDescription = test;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = test;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../FrameworkProj/Lib",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = matrix.push.sample;
+				PRODUCT_NAME = "${TARGET_NAME:c99extidentifier}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Push Smaple Profile";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		9AFBC18A27B4A32500E315F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AFBC18B27B4A32500E315F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AFBC18D27B4A32500E315F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Template_Push/Template_Push.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Template_Push/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = YXHXABBUG5;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../FrameworkProj/Lib",
+					"$(PROJECT_DIR)/SwiftUISampleProject/Plugins/wmatrix-plugin-network",
+					"$(PROJECT_DIR)/SwiftUISampleProject/Plugins/wmatrix-plugin-camera",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-edgeagent",
+					"$(PROJECT_DIR)/MatrixMobile/Lib",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				INFOPLIST_FILE = "$(SRCROOT)/Template_Push/Template_Push-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_NSCameraUsageDescription = test;
+				INFOPLIST_KEY_NSLocationUsageDescription = test;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = test;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../FrameworkProj/Lib",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = matrix.push.sample;
+				PRODUCT_NAME = "${TARGET_NAME:c99extidentifier}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Push Smaple Profile";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AFBC18E27B4A32500E315F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Template_Push/Template_Push.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Template_Push/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = YXHXABBUG5;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../FrameworkProj/Lib",
+					"$(PROJECT_DIR)/SwiftUISampleProject/Plugins/wmatrix-plugin-network",
+					"$(PROJECT_DIR)/SwiftUISampleProject/Plugins/wmatrix-plugin-camera",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-edgeagent",
+					"$(PROJECT_DIR)/MatrixMobile/Lib",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../FrameworkProj/Lib";
+				INFOPLIST_FILE = "$(SRCROOT)/Template_Push/Template_Push-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_NSCameraUsageDescription = test;
+				INFOPLIST_KEY_NSLocationUsageDescription = test;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = test;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../FrameworkProj/Lib",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = matrix.push.sample;
+				PRODUCT_NAME = "${TARGET_NAME:c99extidentifier}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Push Smaple Profile";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9277E3682DD5AEE200D65D7D /* Build configuration list for PBXNativeTarget "Template_Push_Noti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9277E3642DD5AEE200D65D7D /* Debug */,
+				9277E3652DD5AEE200D65D7D /* Test */,
+				9277E3662DD5AEE200D65D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFBC17927B4A32300E315F3 /* Build configuration list for PBXProject "Template_Push" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFBC18A27B4A32500E315F3 /* Debug */,
+				9A546983283B40A9007B5DCF /* Test */,
+				9AFBC18B27B4A32500E315F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFBC18C27B4A32500E315F3 /* Build configuration list for PBXNativeTarget "Template_Push" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFBC18D27B4A32500E315F3 /* Debug */,
+				9A546984283B40A9007B5DCF /* Test */,
+				9AFBC18E27B4A32500E315F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92FE54D92DD1C8E7003655B5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+		E99BB6102E5E94DF000601A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		920C8C3A2E56E6900003DFCB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92FE54D92DD1C8E7003655B5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		E98D67302E72676E00037531 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E99BB6102E5E94DF000601A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		E99BB6112E5E94DF000601A6 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E99BB6102E5E94DF000601A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9AFBC17627B4A32300E315F3 /* Project object */;
+}

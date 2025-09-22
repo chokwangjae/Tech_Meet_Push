@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-websquare" type="basic" version="9.1.1.0">
+	<name>websquare</name>
+	<description>MatrixMobile WebSquare Plugin</description>
+	<js-module name="websquare" src="www/websquare.js">
+		<clobbers target="matrixMobile.plugin.websquare" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileWebSquarePlugin">
+				<param name="ios-package" value="MatrixMobileWebSquarePlugin" />
+			</feature>
+		</config-file>
+		<framework embed="true" src="src/MatrixMobileWebSquare.framework" />
+	</platform>
+</plugin>

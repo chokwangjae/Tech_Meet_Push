@@ -1,0 +1,376 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "MessageUI",
+        "printedName": "MessageUI",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "ContactsUI",
+        "printedName": "ContactsUI",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileMisc"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 430,
+      "length": 4,
+      "value": "\"on\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 5,
+      "value": "\"off\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 430,
+      "length": 4,
+      "value": "\"on\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 5,
+      "value": "\"off\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 39,
+      "value": "\"Location Services are not determined.\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 35,
+      "value": "\"Location Services are restricted.\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 635,
+      "length": 31,
+      "value": "\"Location Services are denied.\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 689,
+      "length": 31,
+      "value": "\"Location services are enabled\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 750,
+      "length": 35,
+      "value": "\"Location services are not enabled\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 39,
+      "value": "\"Location Services are not determined.\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 35,
+      "value": "\"Location Services are restricted.\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 635,
+      "length": 31,
+      "value": "\"Location Services are denied.\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 689,
+      "length": 31,
+      "value": "\"Location services are enabled\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 750,
+      "length": 35,
+      "value": "\"Location services are not enabled\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 4,
+      "value": "2071"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 4,
+      "value": "2071"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 4,
+      "value": "2071"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 376,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 376,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 376,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/WMReachability.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 41,
+      "value": "\"kNetworkReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileMisc\/9.1.1.0\/MatrixMobileMisc\/MatrixMobileMiscPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 701,
+      "length": 6,
+      "value": "\"none\""
+    }
+  ]
+}

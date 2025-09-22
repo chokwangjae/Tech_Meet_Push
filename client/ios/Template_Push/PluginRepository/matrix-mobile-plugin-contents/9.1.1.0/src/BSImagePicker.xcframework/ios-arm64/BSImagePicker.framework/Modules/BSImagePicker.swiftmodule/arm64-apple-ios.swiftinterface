@@ -1,0 +1,174 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BSImagePicker
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+@_exported import BSImagePicker
+import Foundation
+import Photos
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func bs_presentImagePickerController(_ imagePicker: BSImagePicker.BSImagePickerViewController, animated: Swift.Bool, select: ((_ asset: Photos.PHAsset) -> Swift.Void)?, deselect: ((_ asset: Photos.PHAsset) -> Swift.Void)?, cancel: (([Photos.PHAsset]) -> Swift.Void)?, finish: (([Photos.PHAsset]) -> Swift.Void)?, completion: (() -> Swift.Void)?, selectLimitReached: ((Swift.Int) -> Swift.Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class BSImageView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var isUserInteractionEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var tintColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension BSImagePicker.BSImageView {
+  @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic open var image: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic open var highlightedImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var animationImages: [UIKit.UIImage]? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var highlightedAnimationImages: [UIKit.UIImage]? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var animationDuration: Foundation.TimeInterval {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var animationRepeatCount: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open func startAnimating()
+  @_Concurrency.MainActor(unsafe) open func stopAnimating()
+  @_Concurrency.MainActor(unsafe) open var isAnimating: Swift.Bool {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) open class BSImagePickerViewController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) open var settings: any BSImagePicker.BSImagePickerSettings
+  @objc @_Concurrency.MainActor(unsafe) open var doneButton: UIKit.UIBarButtonItem
+  @objc @_Concurrency.MainActor(unsafe) open var cancelButton: UIKit.UIBarButtonItem
+  @objc @_Concurrency.MainActor(unsafe) open var defaultSelections: Photos.PHFetchResult<Photos.PHAsset>?
+  @objc @_Concurrency.MainActor(unsafe) open var fetchResults: [Photos.PHFetchResult<Photos.PHAssetCollection>] {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @objc deinit
+}
+extension BSImagePicker.BSImagePickerViewController : BSImagePicker.BSImagePickerSettings {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var maxNumberOfSelections: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var selectionCharacter: Swift.Character? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionFillColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionStrokeColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionShadowColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionTextAttributes: [Foundation.NSAttributedString.Key : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var backgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var cellsPerRow: (_ verticalSize: UIKit.UIUserInterfaceSizeClass, _ horizontalSize: UIKit.UIUserInterfaceSizeClass) -> Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var takePhotos: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var takePhotoIcon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+}
+extension BSImagePicker.BSImagePickerViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var albumButton: UIKit.UIButton {
+    @objc get
+    @objc set
+  }
+}
+public protocol BSImagePickerSettings {
+  var maxNumberOfSelections: Swift.Int { get set }
+  var selectionCharacter: Swift.Character? { get set }
+  var selectionFillColor: UIKit.UIColor { get set }
+  var selectionStrokeColor: UIKit.UIColor { get set }
+  var selectionShadowColor: UIKit.UIColor { get set }
+  var selectionTextAttributes: [Foundation.NSAttributedString.Key : Swift.AnyObject] { get set }
+  var backgroundColor: UIKit.UIColor { get set }
+  var cellsPerRow: (_ verticalSize: UIKit.UIUserInterfaceSizeClass, _ horizontalSize: UIKit.UIUserInterfaceSizeClass) -> Swift.Int { get set }
+  var takePhotos: Swift.Bool { get set }
+  var takePhotoIcon: UIKit.UIImage? { get set }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class BSGridCollectionViewLayout : UIKit.UICollectionViewLayout {
+  @_Concurrency.MainActor(unsafe) final public var itemSpacing: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var itemsPerRow: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var itemHeightRatio: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var itemSize: CoreFoundation.CGSize {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override final public var collectionViewContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override final public func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForDecorationView(ofKind elementKind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForSupplementaryView(ofKind elementKind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}

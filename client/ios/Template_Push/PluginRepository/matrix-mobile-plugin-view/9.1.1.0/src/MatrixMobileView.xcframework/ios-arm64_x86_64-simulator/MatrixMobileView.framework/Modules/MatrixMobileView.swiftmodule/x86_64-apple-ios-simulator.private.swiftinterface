@@ -1,0 +1,341 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MatrixMobileView
+import Darwin
+@_exported import MatrixMobileView
+import Matrix_Mobile
+import ObjectiveC
+import Swift
+import UIKit
+import UserNotifications
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum TTGSnackbarDuration : Swift.Int {
+  case short = 1
+  case middle = 3
+  case long = 5
+  case forever = 2147483647
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum TTGSnackbarAnimationType : Swift.Int {
+  case fadeInFadeOut
+  case slideFromBottomToTop
+  case slideFromBottomBackToBottom
+  case slideFromLeftToRight
+  case slideFromRightToLeft
+  case slideFromTopToBottom
+  case slideFromTopBackToTop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIColor {
+  @objc dynamic open class var ttgDefaultText: UIKit.UIColor {
+    @objc get
+  }
+  @objc dynamic open class var ttgDefaultBackground: UIKit.UIColor {
+    @objc get
+  }
+  @objc dynamic open class var ttgDefaultShadow: UIKit.UIColor {
+    @objc get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TTGSnackbar : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public static var snackbarDefaultFrame: CoreFoundation.CGRect
+  @objc @_Concurrency.MainActor(unsafe) public static var snackbarMinHeight: CoreFoundation.CGFloat
+  public typealias TTGActionBlock = (_ snackbar: MatrixMobileView.TTGSnackbar) -> Swift.Void
+  public typealias TTGDismissBlock = (_ snackbar: MatrixMobileView.TTGSnackbar) -> Swift.Void
+  public typealias TTGSwipeBlock = (_ snackbar: MatrixMobileView.TTGSnackbar, _ direction: UIKit.UISwipeGestureRecognizer.Direction) -> Swift.Void
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var onTapBlock: MatrixMobileView.TTGSnackbar.TTGActionBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var onSwipeBlock: MatrixMobileView.TTGSnackbar.TTGSwipeBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldDismissOnSwipe: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldActivateLeftAndRightMarginOnCustomContentView: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldHonorSafeAreaLayoutGuides: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionBlock: MatrixMobileView.TTGSnackbar.TTGActionBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionBlock: MatrixMobileView.TTGSnackbar.TTGActionBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var dismissBlock: MatrixMobileView.TTGSnackbar.TTGDismissBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var duration: MatrixMobileView.TTGSnackbarDuration
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationType: MatrixMobileView.TTGSnackbarAnimationType
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationDuration: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var borderColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var topMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var bottomMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var leftMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var rightMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var contentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageContentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageLabel: MatrixMobileView.TTGSnackbarLabel! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var message: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageTextFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageTextAlign: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionButton: UIKit.UIButton! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionIcon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionButton: UIKit.UIButton! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionIcon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionTextFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionTextFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionMaxWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionTextNumberOfLines: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconImageView: UIKit.UIImageView! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var icon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconContentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconBackgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconTintColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconImageViewWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var containerView: UIKit.UIView?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var customContentView: UIKit.UIView?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var separateViewBackgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var activityIndicatorView: UIKit.UIActivityIndicatorView! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var activityIndicatorViewStyle: UIKit.UIActivityIndicatorView.Style {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var activityIndicatorViewColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationSpringWithDamping: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationInitialSpringVelocity: CoreFoundation.CGFloat
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @objc @_Concurrency.MainActor(unsafe) public init(message: Swift.String, duration: MatrixMobileView.TTGSnackbarDuration)
+  @_Concurrency.MainActor(unsafe) public init(customContentView: UIKit.UIView, duration: MatrixMobileView.TTGSnackbarDuration)
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String, duration: MatrixMobileView.TTGSnackbarDuration, actionText: Swift.String, actionBlock: @escaping MatrixMobileView.TTGSnackbar.TTGActionBlock)
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String, duration: MatrixMobileView.TTGSnackbarDuration, actionText: Swift.String, messageFont: UIKit.UIFont, actionTextFont: UIKit.UIFont, actionBlock: @escaping MatrixMobileView.TTGSnackbar.TTGActionBlock)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+}
+extension MatrixMobileView.TTGSnackbar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func show()
+}
+extension MatrixMobileView.TTGSnackbar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func dismiss()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TTGSnackbarLabel : UIKit.UILabel {
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var contentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func drawText(in rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIView {
+  public struct ToastKeys {
+  }
+  @_hasMissingDesignatedInitializers public class ToastCompletionWrapper {
+    @objc deinit
+  }
+  public enum ToastError : Swift.Error {
+    case missingParameters
+    public static func == (a: UIKit.UIView.ToastError, b: UIKit.UIView.ToastError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public var activeToasts: Foundation.NSMutableArray {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var queue: Foundation.NSMutableArray {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func makeToast(_ message: Swift.String?, duration: Foundation.TimeInterval = ToastManager.shared.duration, position: MatrixMobileView.ToastPosition = ToastManager.shared.position, title: Swift.String? = nil, image: UIKit.UIImage? = nil, style: MatrixMobileView.ToastStyle = ToastManager.shared.style, completion: ((_ didTap: Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func makeToast(_ message: Swift.String?, duration: Foundation.TimeInterval = ToastManager.shared.duration, point: CoreFoundation.CGPoint, title: Swift.String?, image: UIKit.UIImage?, style: MatrixMobileView.ToastStyle = ToastManager.shared.style, completion: ((_ didTap: Swift.Bool) -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) public func showToast(_ toast: UIKit.UIView, duration: Foundation.TimeInterval = ToastManager.shared.duration, position: MatrixMobileView.ToastPosition = ToastManager.shared.position, completion: ((_ didTap: Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func showToast(_ toast: UIKit.UIView, duration: Foundation.TimeInterval = ToastManager.shared.duration, point: CoreFoundation.CGPoint, completion: ((_ didTap: Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func hideToast()
+  @_Concurrency.MainActor(unsafe) public func hideToast(_ toast: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func hideAllToasts(includeActivity: Swift.Bool = false, clearQueue: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func clearToastQueue()
+  @_Concurrency.MainActor(unsafe) public func makeToastActivity(_ position: MatrixMobileView.ToastPosition)
+  @_Concurrency.MainActor(unsafe) public func makeToastActivity(_ point: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor(unsafe) public func hideToastActivity()
+  @_Concurrency.MainActor(unsafe) public func makeToastActivity(_ toast: UIKit.UIView, point: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor(unsafe) public func createToastActivityView() -> UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public func showToast(_ toast: UIKit.UIView, duration: Foundation.TimeInterval, point: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor(unsafe) public func hideToast(_ toast: UIKit.UIView, fromTap: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func toastViewForMessage(_ message: Swift.String?, title: Swift.String?, image: UIKit.UIImage?, style: MatrixMobileView.ToastStyle) throws -> UIKit.UIView
+}
+public struct ToastStyle {
+  public init()
+  public var backgroundColor: UIKit.UIColor
+  public var titleColor: UIKit.UIColor
+  public var messageColor: UIKit.UIColor
+  public var maxWidthPercentage: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  public var maxHeightPercentage: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  public var horizontalPadding: CoreFoundation.CGFloat
+  public var verticalPadding: CoreFoundation.CGFloat
+  public var cornerRadius: CoreFoundation.CGFloat
+  public var titleFont: UIKit.UIFont
+  public var messageFont: UIKit.UIFont
+  public var titleAlignment: UIKit.NSTextAlignment
+  public var messageAlignment: UIKit.NSTextAlignment
+  public var titleNumberOfLines: Swift.Int
+  public var messageNumberOfLines: Swift.Int
+  public var displayShadow: Swift.Bool
+  public var shadowColor: UIKit.UIColor
+  public var shadowOpacity: Swift.Float {
+    get
+    set
+  }
+  public var shadowRadius: CoreFoundation.CGFloat
+  public var shadowOffset: CoreFoundation.CGSize
+  public var imageSize: CoreFoundation.CGSize
+  public var activitySize: CoreFoundation.CGSize
+  public var fadeDuration: Swift.Double
+  public var activityIndicatorColor: UIKit.UIColor
+  public var activityBackgroundColor: UIKit.UIColor
+}
+@_hasMissingDesignatedInitializers public class ToastManager {
+  public static let shared: MatrixMobileView.ToastManager
+  public var style: MatrixMobileView.ToastStyle
+  public var isTapToDismissEnabled: Swift.Bool
+  public var isQueueEnabled: Swift.Bool
+  public var duration: Swift.Double
+  public var position: MatrixMobileView.ToastPosition
+  @objc deinit
+}
+public enum ToastPosition {
+  case top
+  case center
+  case bottom
+  public static func == (a: MatrixMobileView.ToastPosition, b: MatrixMobileView.ToastPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MatrixMobileView.TTGSnackbarDuration : Swift.Equatable {}
+extension MatrixMobileView.TTGSnackbarDuration : Swift.Hashable {}
+extension MatrixMobileView.TTGSnackbarDuration : Swift.RawRepresentable {}
+extension MatrixMobileView.TTGSnackbarAnimationType : Swift.Equatable {}
+extension MatrixMobileView.TTGSnackbarAnimationType : Swift.Hashable {}
+extension MatrixMobileView.TTGSnackbarAnimationType : Swift.RawRepresentable {}
+extension UIKit.UIView.ToastError : Swift.Equatable {}
+extension UIKit.UIView.ToastError : Swift.Hashable {}
+extension MatrixMobileView.ToastPosition : Swift.Equatable {}
+extension MatrixMobileView.ToastPosition : Swift.Hashable {}

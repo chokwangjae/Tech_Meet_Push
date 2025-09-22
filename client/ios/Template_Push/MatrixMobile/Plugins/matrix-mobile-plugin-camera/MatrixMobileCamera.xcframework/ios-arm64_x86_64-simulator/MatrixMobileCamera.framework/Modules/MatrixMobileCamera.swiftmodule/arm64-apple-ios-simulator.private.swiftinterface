@@ -1,0 +1,26 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MatrixMobileCamera
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import AVFoundation
+import CoreLocation
+import CoreServices
+import Foundation
+@_exported import MatrixMobileCamera
+import Matrix_Mobile
+import Photos
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(MatrixMobileCameraPlugin) @objcMembers final public class MatrixMobileCameraPlugin : Matrix_Mobile.MatrixMobilePlugin {
+  @objc required dynamic public init()
+  @objc deinit
+}
+extension MatrixMobileCamera.MatrixMobileCameraPlugin : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate, CoreLocation.CLLocationManagerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor @preconcurrency @objc final public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+}

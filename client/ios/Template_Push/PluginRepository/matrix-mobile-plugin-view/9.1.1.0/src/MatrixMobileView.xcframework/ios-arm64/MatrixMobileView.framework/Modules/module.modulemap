@@ -1,0 +1,11 @@
+framework module MatrixMobileView {
+  umbrella header "MatrixMobileView.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileView.Swift {
+  header "MatrixMobileView-Swift.h"
+  requires objc
+}

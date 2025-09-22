@@ -1,0 +1,11 @@
+framework module MatrixMobileGeolocation {
+  umbrella header "MatrixMobileGeolocation.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileGeolocation.Swift {
+  header "MatrixMobileGeolocation-Swift.h"
+  requires objc
+}

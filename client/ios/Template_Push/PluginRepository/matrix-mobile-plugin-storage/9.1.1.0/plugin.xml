@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-storage" type="basic" version="9.1.1.0">
+	<name>storage</name>
+	<description>MatrixMobile Storage Plugin</description>
+	<js-module name="storage" src="www/storage.js">
+		<clobbers target="matrixMobile.plugin.storage" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileStoragePlugin">
+				<param name="ios-package" value="MatrixMobileStoragePlugin" />
+				<param name="onload" value="true" />
+			</feature>
+		</config-file>
+		<framework embed="true" src="src/MatrixMobileStorage.framework" />
+	</platform>
+</plugin>

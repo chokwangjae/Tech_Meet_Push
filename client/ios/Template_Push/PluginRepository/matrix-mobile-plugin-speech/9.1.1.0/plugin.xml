@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-speech" type="basic" version="9.1.1.0">
+	<name>Speech</name>
+	<description>MatrixMobile Speech Plugin</description>
+	<js-module name="speech" src="www/speech.js">
+		<clobbers target="matrixMobile.plugin.speech" />
+	</js-module>
+	<platform name="ios">
+		<edit-config file="*-Info.plist" mode="merge" target="NSSpeechRecognitionUsageDescription">
+			<string>Need permission to use a speech recognition</string>
+		</edit-config>
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileSpeechPlugin">
+				<param name="ios-package" value="MatrixMobileSpeechPlugin" />
+			</feature>
+		</config-file>
+		<framework embed="true" src="src/MatrixMobileSpeech.framework" />
+	</platform>
+</plugin>

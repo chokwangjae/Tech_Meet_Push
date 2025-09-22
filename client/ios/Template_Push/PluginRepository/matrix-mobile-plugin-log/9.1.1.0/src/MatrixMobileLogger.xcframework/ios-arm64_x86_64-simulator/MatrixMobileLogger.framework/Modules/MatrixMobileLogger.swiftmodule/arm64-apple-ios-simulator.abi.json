@@ -1,0 +1,136 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger"
+      },
+      {
+        "kind": "Import",
+        "name": "MessageUI",
+        "printedName": "MessageUI",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MessageUI",
+        "printedName": "MessageUI",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileLogger"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileLogger\/9.1.1.0\/MatrixMobileLogger\/LogUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 383,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileLogger\/9.1.1.0\/MatrixMobileLogger\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 6,
+      "value": "\"2020\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileLogger\/9.1.1.0\/MatrixMobileLogger\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 389,
+      "length": 6,
+      "value": "\"2017\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileLogger\/9.1.1.0\/MatrixMobileLogger\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 6,
+      "value": "\"2020\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileLogger\/9.1.1.0\/MatrixMobileLogger\/StatusCode.swift",
+      "kind": "StringLiteral",
+      "offset": 389,
+      "length": 6,
+      "value": "\"2017\""
+    }
+  ]
+}

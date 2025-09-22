@@ -1,0 +1,11 @@
+framework module MatrixMobileCamera {
+  umbrella header "MatrixMobileCamera.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileCamera.Swift {
+  header "MatrixMobileCamera-Swift.h"
+  requires objc
+}

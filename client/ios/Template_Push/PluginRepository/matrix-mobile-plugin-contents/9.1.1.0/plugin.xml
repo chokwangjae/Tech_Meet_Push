@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-contents" type="basic" version="9.1.1.0">
+	<name>Contents</name>
+	<description>MatrixMobile Contents Plugin</description>
+	<js-module name="contents" src="www/contents.js">
+		<clobbers target="matrixMobile.plugin.contents" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileContentsPlugin">
+				<param name="ios-package" value="MatrixMobileContentsPlugin" />
+			</feature>
+		</config-file>
+		<framework embed="true" src="src/MatrixMobileContents.framework" />
+		<framework embed="true" reposit="true" src="src/BSImagePicker.framework" />
+	</platform>
+</plugin>

@@ -1,0 +1,88 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MatrixMobileApp",
+    "printedName": "MatrixMobileApp",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileApp"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileApp"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileApp\/9.2.1.0\/MatrixMobileApp\/MatrixMobileAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 357,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileApp\/9.2.1.0\/MatrixMobileApp\/StateCode.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 6,
+      "value": "\"2010\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileApp\/9.2.1.0\/MatrixMobileApp\/StateCode.swift",
+      "kind": "StringLiteral",
+      "offset": 354,
+      "length": 6,
+      "value": "\"2011\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileApp\/9.2.1.0\/MatrixMobileApp\/StateCode.swift",
+      "kind": "StringLiteral",
+      "offset": 390,
+      "length": 6,
+      "value": "\"2012\""
+    }
+  ]
+}

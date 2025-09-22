@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-misc" type="basic" version="9.1.1.0">
+	<name>Misc</name>
+	<description>MatrixMobile Misc Plugin</description>
+	<js-module name="misc" src="www/misc.js">
+		<clobbers target="matrixMobile.plugin.misc" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileMiscPlugin">
+				<param name="ios-package" value="MatrixMobileMiscPlugin" />
+			</feature>
+		</config-file>
+		<edit-config file="*-Info.plist" mode="merge" target="NSContactsUsageDescription">
+			<string>Need permission to use contacts</string>
+		</edit-config>
+		<edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysUsageDescription">
+			<string>Need location access in background</string>
+		</edit-config>
+		<edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysAndWhenInUseUsageDescription">
+			<string>Need permission to use Location information</string>
+		</edit-config>
+		<framework embed="true" src="src/MatrixMobileMisc.framework" />
+	</platform>
+</plugin>

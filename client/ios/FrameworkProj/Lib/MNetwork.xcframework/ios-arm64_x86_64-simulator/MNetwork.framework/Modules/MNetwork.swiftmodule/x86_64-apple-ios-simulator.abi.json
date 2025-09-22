@@ -1,0 +1,4127 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MNetwork",
+    "printedName": "MNetwork",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionError",
+        "printedName": "SessionError",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Client",
+            "printedName": "Client",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "badURL",
+                "printedName": "badURL",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Client.Type) -> MNetwork.SessionError.Client",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Client",
+                        "printedName": "MNetwork.SessionError.Client",
+                        "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Client.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Client",
+                            "printedName": "MNetwork.SessionError.Client",
+                            "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO6badURLyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO6badURLyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "badRequest",
+                "printedName": "badRequest",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Client.Type) -> MNetwork.SessionError.Client",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Client",
+                        "printedName": "MNetwork.SessionError.Client",
+                        "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Client.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Client",
+                            "printedName": "MNetwork.SessionError.Client",
+                            "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO10badRequestyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO10badRequestyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "forbidden",
+                "printedName": "forbidden",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Client.Type) -> MNetwork.SessionError.Client",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Client",
+                        "printedName": "MNetwork.SessionError.Client",
+                        "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Client.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Client",
+                            "printedName": "MNetwork.SessionError.Client",
+                            "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO9forbiddenyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO9forbiddenyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "notFound",
+                "printedName": "notFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Client.Type) -> MNetwork.SessionError.Client",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Client",
+                        "printedName": "MNetwork.SessionError.Client",
+                        "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Client.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Client",
+                            "printedName": "MNetwork.SessionError.Client",
+                            "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO8notFoundyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO8notFoundyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "tooManyRequests",
+                "printedName": "tooManyRequests",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Client.Type) -> MNetwork.SessionError.Client",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Client",
+                        "printedName": "MNetwork.SessionError.Client",
+                        "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Client.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Client",
+                            "printedName": "MNetwork.SessionError.Client",
+                            "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO15tooManyRequestsyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO15tooManyRequestsyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "authTokenVaiidationFailed",
+                "printedName": "authTokenVaiidationFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Client.Type) -> MNetwork.SessionError.Client",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Client",
+                        "printedName": "MNetwork.SessionError.Client",
+                        "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Client.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Client",
+                            "printedName": "MNetwork.SessionError.Client",
+                            "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO25authTokenVaiidationFailedyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO25authTokenVaiidationFailedyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Client",
+                    "printedName": "MNetwork.SessionError.Client",
+                    "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Client",
+                    "printedName": "MNetwork.SessionError.Client",
+                    "usr": "s:8MNetwork12SessionErrorO6ClientO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO2eeoiySbAE_AEtFZ",
+                "moduleName": "MNetwork",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO9hashValueSivp",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO9hashValueSivp",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO6ClientO9hashValueSivg",
+                    "mangledName": "$s8MNetwork12SessionErrorO6ClientO9hashValueSivg",
+                    "moduleName": "MNetwork",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO4hash4intoys6HasherVz_tF",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO6ClientO16errorDescriptionSSSgvp",
+                "mangledName": "$s8MNetwork12SessionErrorO6ClientO16errorDescriptionSSSgvp",
+                "moduleName": "MNetwork",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO6ClientO16errorDescriptionSSSgvg",
+                    "mangledName": "$s8MNetwork12SessionErrorO6ClientO16errorDescriptionSSSgvg",
+                    "moduleName": "MNetwork",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:8MNetwork12SessionErrorO6ClientO",
+            "mangledName": "$s8MNetwork12SessionErrorO6ClientO",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LocalizedError",
+                "printedName": "LocalizedError",
+                "usr": "s:10Foundation14LocalizedErrorP",
+                "mangledName": "$s10Foundation14LocalizedErrorP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Server",
+            "printedName": "Server",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "unknown",
+                "printedName": "unknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Server.Type) -> MNetwork.SessionError.Server",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Server",
+                        "printedName": "MNetwork.SessionError.Server",
+                        "usr": "s:8MNetwork12SessionErrorO6ServerO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Server.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Server",
+                            "printedName": "MNetwork.SessionError.Server",
+                            "usr": "s:8MNetwork12SessionErrorO6ServerO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6ServerO7unknownyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ServerO7unknownyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Server",
+                    "printedName": "MNetwork.SessionError.Server",
+                    "usr": "s:8MNetwork12SessionErrorO6ServerO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Server",
+                    "printedName": "MNetwork.SessionError.Server",
+                    "usr": "s:8MNetwork12SessionErrorO6ServerO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO6ServerO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s8MNetwork12SessionErrorO6ServerO2eeoiySbAE_AEtFZ",
+                "moduleName": "MNetwork",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO6ServerO9hashValueSivp",
+                "mangledName": "$s8MNetwork12SessionErrorO6ServerO9hashValueSivp",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO6ServerO9hashValueSivg",
+                    "mangledName": "$s8MNetwork12SessionErrorO6ServerO9hashValueSivg",
+                    "moduleName": "MNetwork",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO6ServerO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s8MNetwork12SessionErrorO6ServerO4hash4intoys6HasherVz_tF",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO6ServerO16errorDescriptionSSSgvp",
+                "mangledName": "$s8MNetwork12SessionErrorO6ServerO16errorDescriptionSSSgvp",
+                "moduleName": "MNetwork",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO6ServerO16errorDescriptionSSSgvg",
+                    "mangledName": "$s8MNetwork12SessionErrorO6ServerO16errorDescriptionSSSgvg",
+                    "moduleName": "MNetwork",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:8MNetwork12SessionErrorO6ServerO",
+            "mangledName": "$s8MNetwork12SessionErrorO6ServerO",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LocalizedError",
+                "printedName": "LocalizedError",
+                "usr": "s:10Foundation14LocalizedErrorP",
+                "mangledName": "$s10Foundation14LocalizedErrorP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Network",
+            "printedName": "Network",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "timeout",
+                "printedName": "timeout",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Network.Type) -> MNetwork.SessionError.Network",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Network",
+                        "printedName": "MNetwork.SessionError.Network",
+                        "usr": "s:8MNetwork12SessionErrorO7NetworkO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Network.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Network",
+                            "printedName": "MNetwork.SessionError.Network",
+                            "usr": "s:8MNetwork12SessionErrorO7NetworkO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO7NetworkO7timeoutyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO7NetworkO7timeoutyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "unknown",
+                "printedName": "unknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Network.Type) -> MNetwork.SessionError.Network",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Network",
+                        "printedName": "MNetwork.SessionError.Network",
+                        "usr": "s:8MNetwork12SessionErrorO7NetworkO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Network.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Network",
+                            "printedName": "MNetwork.SessionError.Network",
+                            "usr": "s:8MNetwork12SessionErrorO7NetworkO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO7NetworkO7unknownyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO7NetworkO7unknownyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Network",
+                    "printedName": "MNetwork.SessionError.Network",
+                    "usr": "s:8MNetwork12SessionErrorO7NetworkO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Network",
+                    "printedName": "MNetwork.SessionError.Network",
+                    "usr": "s:8MNetwork12SessionErrorO7NetworkO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO7NetworkO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s8MNetwork12SessionErrorO7NetworkO2eeoiySbAE_AEtFZ",
+                "moduleName": "MNetwork",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO7NetworkO9hashValueSivp",
+                "mangledName": "$s8MNetwork12SessionErrorO7NetworkO9hashValueSivp",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO7NetworkO9hashValueSivg",
+                    "mangledName": "$s8MNetwork12SessionErrorO7NetworkO9hashValueSivg",
+                    "moduleName": "MNetwork",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO7NetworkO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s8MNetwork12SessionErrorO7NetworkO4hash4intoys6HasherVz_tF",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO7NetworkO16errorDescriptionSSSgvp",
+                "mangledName": "$s8MNetwork12SessionErrorO7NetworkO16errorDescriptionSSSgvp",
+                "moduleName": "MNetwork",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO7NetworkO16errorDescriptionSSSgvg",
+                    "mangledName": "$s8MNetwork12SessionErrorO7NetworkO16errorDescriptionSSSgvg",
+                    "moduleName": "MNetwork",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:8MNetwork12SessionErrorO7NetworkO",
+            "mangledName": "$s8MNetwork12SessionErrorO7NetworkO",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LocalizedError",
+                "printedName": "LocalizedError",
+                "usr": "s:10Foundation14LocalizedErrorP",
+                "mangledName": "$s10Foundation14LocalizedErrorP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Others",
+            "printedName": "Others",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "empty",
+                "printedName": "empty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Others.Type) -> MNetwork.SessionError.Others",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Others",
+                        "printedName": "MNetwork.SessionError.Others",
+                        "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Others.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Others",
+                            "printedName": "MNetwork.SessionError.Others",
+                            "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6OthersO5emptyyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6OthersO5emptyyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "decoding",
+                "printedName": "decoding",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Others.Type) -> MNetwork.SessionError.Others",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Others",
+                        "printedName": "MNetwork.SessionError.Others",
+                        "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Others.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Others",
+                            "printedName": "MNetwork.SessionError.Others",
+                            "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6OthersO8decodingyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6OthersO8decodingyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "unknown",
+                "printedName": "unknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MNetwork.SessionError.Others.Type) -> MNetwork.SessionError.Others",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Others",
+                        "printedName": "MNetwork.SessionError.Others",
+                        "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MNetwork.SessionError.Others.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Others",
+                            "printedName": "MNetwork.SessionError.Others",
+                            "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8MNetwork12SessionErrorO6OthersO7unknownyA2EmF",
+                "mangledName": "$s8MNetwork12SessionErrorO6OthersO7unknownyA2EmF",
+                "moduleName": "MNetwork"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Others",
+                    "printedName": "MNetwork.SessionError.Others",
+                    "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Others",
+                    "printedName": "MNetwork.SessionError.Others",
+                    "usr": "s:8MNetwork12SessionErrorO6OthersO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO6OthersO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s8MNetwork12SessionErrorO6OthersO2eeoiySbAE_AEtFZ",
+                "moduleName": "MNetwork",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO6OthersO9hashValueSivp",
+                "mangledName": "$s8MNetwork12SessionErrorO6OthersO9hashValueSivp",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO6OthersO9hashValueSivg",
+                    "mangledName": "$s8MNetwork12SessionErrorO6OthersO9hashValueSivg",
+                    "moduleName": "MNetwork",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8MNetwork12SessionErrorO6OthersO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s8MNetwork12SessionErrorO6OthersO4hash4intoys6HasherVz_tF",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8MNetwork12SessionErrorO6OthersO16errorDescriptionSSSgvp",
+                "mangledName": "$s8MNetwork12SessionErrorO6OthersO16errorDescriptionSSSgvp",
+                "moduleName": "MNetwork",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8MNetwork12SessionErrorO6OthersO16errorDescriptionSSSgvg",
+                    "mangledName": "$s8MNetwork12SessionErrorO6OthersO16errorDescriptionSSSgvg",
+                    "moduleName": "MNetwork",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:8MNetwork12SessionErrorO6OthersO",
+            "mangledName": "$s8MNetwork12SessionErrorO6OthersO",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LocalizedError",
+                "printedName": "LocalizedError",
+                "usr": "s:10Foundation14LocalizedErrorP",
+                "mangledName": "$s10Foundation14LocalizedErrorP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8MNetwork12SessionErrorO",
+        "mangledName": "$s8MNetwork12SessionErrorO",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MUtil",
+        "printedName": "MUtil",
+        "declKind": "Import",
+        "moduleName": "MNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MUtil",
+        "printedName": "MUtil",
+        "declKind": "Import",
+        "moduleName": "MNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkMethod",
+        "printedName": "NetworkMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "GET",
+            "printedName": "GET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MNetwork.NetworkMethod.Type) -> MNetwork.NetworkMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkMethod",
+                    "printedName": "MNetwork.NetworkMethod",
+                    "usr": "s:8MNetwork13NetworkMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MNetwork.NetworkMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkMethod",
+                        "printedName": "MNetwork.NetworkMethod",
+                        "usr": "s:8MNetwork13NetworkMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8MNetwork13NetworkMethodO3GETyA2CmF",
+            "mangledName": "$s8MNetwork13NetworkMethodO3GETyA2CmF",
+            "moduleName": "MNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "POST",
+            "printedName": "POST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MNetwork.NetworkMethod.Type) -> MNetwork.NetworkMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkMethod",
+                    "printedName": "MNetwork.NetworkMethod",
+                    "usr": "s:8MNetwork13NetworkMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MNetwork.NetworkMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkMethod",
+                        "printedName": "MNetwork.NetworkMethod",
+                        "usr": "s:8MNetwork13NetworkMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8MNetwork13NetworkMethodO4POSTyA2CmF",
+            "mangledName": "$s8MNetwork13NetworkMethodO4POSTyA2CmF",
+            "moduleName": "MNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "PUT",
+            "printedName": "PUT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MNetwork.NetworkMethod.Type) -> MNetwork.NetworkMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkMethod",
+                    "printedName": "MNetwork.NetworkMethod",
+                    "usr": "s:8MNetwork13NetworkMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MNetwork.NetworkMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkMethod",
+                        "printedName": "MNetwork.NetworkMethod",
+                        "usr": "s:8MNetwork13NetworkMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8MNetwork13NetworkMethodO3PUTyA2CmF",
+            "mangledName": "$s8MNetwork13NetworkMethodO3PUTyA2CmF",
+            "moduleName": "MNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "DELETE",
+            "printedName": "DELETE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MNetwork.NetworkMethod.Type) -> MNetwork.NetworkMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkMethod",
+                    "printedName": "MNetwork.NetworkMethod",
+                    "usr": "s:8MNetwork13NetworkMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MNetwork.NetworkMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkMethod",
+                        "printedName": "MNetwork.NetworkMethod",
+                        "usr": "s:8MNetwork13NetworkMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8MNetwork13NetworkMethodO6DELETEyA2CmF",
+            "mangledName": "$s8MNetwork13NetworkMethodO6DELETEyA2CmF",
+            "moduleName": "MNetwork"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MNetwork.NetworkMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkMethod",
+                    "printedName": "MNetwork.NetworkMethod",
+                    "usr": "s:8MNetwork13NetworkMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8MNetwork13NetworkMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s8MNetwork13NetworkMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "MNetwork",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork13NetworkMethodO8rawValueSSvp",
+            "mangledName": "$s8MNetwork13NetworkMethodO8rawValueSSvp",
+            "moduleName": "MNetwork",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork13NetworkMethodO8rawValueSSvg",
+                "mangledName": "$s8MNetwork13NetworkMethodO8rawValueSSvg",
+                "moduleName": "MNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8MNetwork13NetworkMethodO",
+        "mangledName": "$s8MNetwork13NetworkMethodO",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TargetType",
+        "printedName": "TargetType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP7baseURLSSvp",
+            "mangledName": "$s8MNetwork10TargetTypeP7baseURLSSvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP7baseURLSSvg",
+                "mangledName": "$s8MNetwork10TargetTypeP7baseURLSSvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rootContext",
+            "printedName": "rootContext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP11rootContextSSvp",
+            "mangledName": "$s8MNetwork10TargetTypeP11rootContextSSvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP11rootContextSSvg",
+                "mangledName": "$s8MNetwork10TargetTypeP11rootContextSSvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP4pathSSvp",
+            "mangledName": "$s8MNetwork10TargetTypeP4pathSSvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP4pathSSvg",
+                "mangledName": "$s8MNetwork10TargetTypeP4pathSSvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkMethod",
+                "printedName": "MNetwork.NetworkMethod",
+                "usr": "s:8MNetwork13NetworkMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP6methodAA13NetworkMethodOvp",
+            "mangledName": "$s8MNetwork10TargetTypeP6methodAA13NetworkMethodOvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkMethod",
+                    "printedName": "MNetwork.NetworkMethod",
+                    "usr": "s:8MNetwork13NetworkMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP6methodAA13NetworkMethodOvg",
+                "mangledName": "$s8MNetwork10TargetTypeP6methodAA13NetworkMethodOvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sampleData",
+            "printedName": "sampleData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP10sampleData10Foundation0E0Vvp",
+            "mangledName": "$s8MNetwork10TargetTypeP10sampleData10Foundation0E0Vvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP10sampleData10Foundation0E0Vvg",
+                "mangledName": "$s8MNetwork10TargetTypeP10sampleData10Foundation0E0Vvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parameter",
+            "printedName": "parameter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP9parameterSDySSypGvp",
+            "mangledName": "$s8MNetwork10TargetTypeP9parameterSDySSypGvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP9parameterSDySSypGvg",
+                "mangledName": "$s8MNetwork10TargetTypeP9parameterSDySSypGvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP7headersSDyS2SGSgvp",
+            "mangledName": "$s8MNetwork10TargetTypeP7headersSDyS2SGSgvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP7headersSDyS2SGSgvg",
+                "mangledName": "$s8MNetwork10TargetTypeP7headersSDyS2SGSgvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "absoluteURL",
+            "printedName": "absoluteURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypeP11absoluteURLSSvp",
+            "mangledName": "$s8MNetwork10TargetTypeP11absoluteURLSSvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypeP11absoluteURLSSvg",
+                "mangledName": "$s8MNetwork10TargetTypeP11absoluteURLSSvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sampleData",
+            "printedName": "sampleData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypePAAE10sampleData10Foundation0E0Vvp",
+            "mangledName": "$s8MNetwork10TargetTypePAAE10sampleData10Foundation0E0Vvp",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypePAAE10sampleData10Foundation0E0Vvg",
+                "mangledName": "$s8MNetwork10TargetTypePAAE10sampleData10Foundation0E0Vvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "absoluteURL",
+            "printedName": "absoluteURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork10TargetTypePAAE11absoluteURLSSvp",
+            "mangledName": "$s8MNetwork10TargetTypePAAE11absoluteURLSSvp",
+            "moduleName": "MNetwork",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork10TargetTypePAAE11absoluteURLSSvg",
+                "mangledName": "$s8MNetwork10TargetTypePAAE11absoluteURLSSvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.TargetType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.TargetType>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8MNetwork10TargetTypeP",
+        "mangledName": "$s8MNetwork10TargetTypeP",
+        "moduleName": "MNetwork",
+        "genericSig": "<τ_0_0 : Swift.CustomStringConvertible>",
+        "sugared_genericSig": "<Self : Swift.CustomStringConvertible>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "MUtil",
+        "printedName": "MUtil",
+        "declKind": "Import",
+        "moduleName": "MNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionManagerType",
+        "printedName": "SessionManagerType",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork18SessionManagerTypeP7request6target10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtAA06TargetD0_p_tYaF",
+            "mangledName": "$s8MNetwork18SessionManagerTypeP7request6target10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtAA06TargetD0_p_tYaF",
+            "moduleName": "MNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.SessionManagerType>",
+            "sugared_genericSig": "<Self where Self : MNetwork.SessionManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(data: Foundation.Data, response: Foundation.URLResponse), any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(data: Foundation.Data, response: Foundation.URLResponse)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork18SessionManagerTypeP7request6target7Combine12AnyPublisherVy10Foundation4DataV4data_So13NSURLResponseC8responsets5Error_pGAA06TargetD0_p_tF",
+            "mangledName": "$s8MNetwork18SessionManagerTypeP7request6target7Combine12AnyPublisherVy10Foundation4DataV4data_So13NSURLResponseC8responsets5Error_pGAA06TargetD0_p_tF",
+            "moduleName": "MNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.SessionManagerType>",
+            "sugared_genericSig": "<Self where Self : MNetwork.SessionManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork18SessionManagerTypeP7request6target10completionyAA06TargetD0_p_y10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s8MNetwork18SessionManagerTypeP7request6target10completionyAA06TargetD0_p_y10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "MNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.SessionManagerType>",
+            "sugared_genericSig": "<Self where Self : MNetwork.SessionManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8MNetwork18SessionManagerTypeP",
+        "mangledName": "$s8MNetwork18SessionManagerTypeP",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionManager",
+        "printedName": "SessionManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SessionManager",
+                "printedName": "MNetwork.SessionManager",
+                "usr": "s:8MNetwork14SessionManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8MNetwork14SessionManagerCACycfc",
+            "mangledName": "$s8MNetwork14SessionManagerCACycfc",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork14SessionManagerC7request6target10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtAA10TargetType_p_tYaF",
+            "mangledName": "$s8MNetwork14SessionManagerC7request6target10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtAA10TargetType_p_tYaF",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(data: Foundation.Data, response: Foundation.URLResponse), any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(data: Foundation.Data, response: Foundation.URLResponse)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork14SessionManagerC7request6target7Combine12AnyPublisherVy10Foundation4DataV4data_So13NSURLResponseC8responsets5Error_pGAA10TargetType_p_tF",
+            "mangledName": "$s8MNetwork14SessionManagerC7request6target7Combine12AnyPublisherVy10Foundation4DataV4data_So13NSURLResponseC8responsets5Error_pGAA10TargetType_p_tF",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork14SessionManagerC7request6target10completionyAA10TargetType_p_y10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s8MNetwork14SessionManagerC7request6target10completionyAA10TargetType_p_y10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8MNetwork14SessionManagerC",
+        "mangledName": "$s8MNetwork14SessionManagerC",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SessionManagerType",
+            "printedName": "SessionManagerType",
+            "usr": "s:8MNetwork18SessionManagerTypeP",
+            "mangledName": "$s8MNetwork18SessionManagerTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "MUtil",
+        "printedName": "MUtil",
+        "declKind": "Import",
+        "moduleName": "MNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SseConnectionState",
+        "printedName": "SseConnectionState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MNetwork.SseConnectionState.Type) -> MNetwork.SseConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SseConnectionState",
+                    "printedName": "MNetwork.SseConnectionState",
+                    "usr": "s:8MNetwork18SseConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MNetwork.SseConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SseConnectionState",
+                        "printedName": "MNetwork.SseConnectionState",
+                        "usr": "s:8MNetwork18SseConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8MNetwork18SseConnectionStateO12disconnectedyA2CmF",
+            "mangledName": "$s8MNetwork18SseConnectionStateO12disconnectedyA2CmF",
+            "moduleName": "MNetwork",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "connected",
+            "printedName": "connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MNetwork.SseConnectionState.Type) -> MNetwork.SseConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SseConnectionState",
+                    "printedName": "MNetwork.SseConnectionState",
+                    "usr": "s:8MNetwork18SseConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MNetwork.SseConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SseConnectionState",
+                        "printedName": "MNetwork.SseConnectionState",
+                        "usr": "s:8MNetwork18SseConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8MNetwork18SseConnectionStateO9connectedyA2CmF",
+            "mangledName": "$s8MNetwork18SseConnectionStateO9connectedyA2CmF",
+            "moduleName": "MNetwork",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MNetwork.SseConnectionState.Type) -> (any Swift.Error) -> MNetwork.SseConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> MNetwork.SseConnectionState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SseConnectionState",
+                        "printedName": "MNetwork.SseConnectionState",
+                        "usr": "s:8MNetwork18SseConnectionStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MNetwork.SseConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SseConnectionState",
+                        "printedName": "MNetwork.SseConnectionState",
+                        "usr": "s:8MNetwork18SseConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8MNetwork18SseConnectionStateO5erroryACs5Error_pcACmF",
+            "mangledName": "$s8MNetwork18SseConnectionStateO5erroryACs5Error_pcACmF",
+            "moduleName": "MNetwork",
+            "fixedbinaryorder": 2
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8MNetwork18SseConnectionStateO",
+        "mangledName": "$s8MNetwork18SseConnectionStateO",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SseSessionManagerType",
+        "printedName": "SseSessionManagerType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "messagePublisher",
+            "printedName": "messagePublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.String, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork21SseSessionManagerTypeP16messagePublisher7Combine03AnyG0VySSs5NeverOGvp",
+            "mangledName": "$s8MNetwork21SseSessionManagerTypeP16messagePublisher7Combine03AnyG0VySSs5NeverOGvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<Swift.String, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork21SseSessionManagerTypeP16messagePublisher7Combine03AnyG0VySSs5NeverOGvg",
+                "mangledName": "$s8MNetwork21SseSessionManagerTypeP16messagePublisher7Combine03AnyG0VySSs5NeverOGvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.SseSessionManagerType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.SseSessionManagerType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statePublisher",
+            "printedName": "statePublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<MNetwork.SseConnectionState, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SseConnectionState",
+                    "printedName": "MNetwork.SseConnectionState",
+                    "usr": "s:8MNetwork18SseConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork21SseSessionManagerTypeP14statePublisher7Combine03AnyG0VyAA0B15ConnectionStateOs5NeverOGvp",
+            "mangledName": "$s8MNetwork21SseSessionManagerTypeP14statePublisher7Combine03AnyG0VyAA0B15ConnectionStateOs5NeverOGvp",
+            "moduleName": "MNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<MNetwork.SseConnectionState, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SseConnectionState",
+                        "printedName": "MNetwork.SseConnectionState",
+                        "usr": "s:8MNetwork18SseConnectionStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork21SseSessionManagerTypeP14statePublisher7Combine03AnyG0VyAA0B15ConnectionStateOs5NeverOGvg",
+                "mangledName": "$s8MNetwork21SseSessionManagerTypeP14statePublisher7Combine03AnyG0VyAA0B15ConnectionStateOs5NeverOGvg",
+                "moduleName": "MNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.SseSessionManagerType>",
+                "sugared_genericSig": "<Self where Self : MNetwork.SseSessionManagerType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork21SseSessionManagerTypeP7request6targetyAA06TargetE0_p_tYaKF",
+            "mangledName": "$s8MNetwork21SseSessionManagerTypeP7request6targetyAA06TargetE0_p_tYaKF",
+            "moduleName": "MNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.SseSessionManagerType>",
+            "sugared_genericSig": "<Self where Self : MNetwork.SseSessionManagerType>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork21SseSessionManagerTypeP10disconnectyyF",
+            "mangledName": "$s8MNetwork21SseSessionManagerTypeP10disconnectyyF",
+            "moduleName": "MNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : MNetwork.SseSessionManagerType>",
+            "sugared_genericSig": "<Self where Self : MNetwork.SseSessionManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8MNetwork21SseSessionManagerTypeP",
+        "mangledName": "$s8MNetwork21SseSessionManagerTypeP",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SseSessionManager",
+        "printedName": "SseSessionManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "messagePublisher",
+            "printedName": "messagePublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.String, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork17SseSessionManagerC16messagePublisher7Combine03AnyF0VySSs5NeverOGvp",
+            "mangledName": "$s8MNetwork17SseSessionManagerC16messagePublisher7Combine03AnyF0VySSs5NeverOGvp",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<Swift.String, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork17SseSessionManagerC16messagePublisher7Combine03AnyF0VySSs5NeverOGvg",
+                "mangledName": "$s8MNetwork17SseSessionManagerC16messagePublisher7Combine03AnyF0VySSs5NeverOGvg",
+                "moduleName": "MNetwork",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statePublisher",
+            "printedName": "statePublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<MNetwork.SseConnectionState, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SseConnectionState",
+                    "printedName": "MNetwork.SseConnectionState",
+                    "usr": "s:8MNetwork18SseConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MNetwork17SseSessionManagerC14statePublisher7Combine03AnyF0VyAA0B15ConnectionStateOs5NeverOGvp",
+            "mangledName": "$s8MNetwork17SseSessionManagerC14statePublisher7Combine03AnyF0VyAA0B15ConnectionStateOs5NeverOGvp",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<MNetwork.SseConnectionState, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SseConnectionState",
+                        "printedName": "MNetwork.SseConnectionState",
+                        "usr": "s:8MNetwork18SseConnectionStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MNetwork17SseSessionManagerC14statePublisher7Combine03AnyF0VyAA0B15ConnectionStateOs5NeverOGvg",
+                "mangledName": "$s8MNetwork17SseSessionManagerC14statePublisher7Combine03AnyF0VyAA0B15ConnectionStateOs5NeverOGvg",
+                "moduleName": "MNetwork",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SseSessionManager",
+                "printedName": "MNetwork.SseSessionManager",
+                "usr": "c:@M@MNetwork@objc(cs)SseSessionManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MNetwork@objc(cs)SseSessionManager(im)init",
+            "mangledName": "$s8MNetwork17SseSessionManagerCACycfc",
+            "moduleName": "MNetwork",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork17SseSessionManagerC7request6targetyAA10TargetType_p_tYaKF",
+            "mangledName": "$s8MNetwork17SseSessionManagerC7request6targetyAA10TargetType_p_tYaKF",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8MNetwork17SseSessionManagerC10disconnectyyF",
+            "mangledName": "$s8MNetwork17SseSessionManagerC10disconnectyyF",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:dataTask:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MNetwork@objc(cs)SseSessionManager(im)URLSession:dataTask:didReceiveData:",
+            "mangledName": "$s8MNetwork17SseSessionManagerC03urlC0_8dataTask10didReceiveySo12NSURLSessionC_So0j4DataG0C10Foundation0K0VtF",
+            "moduleName": "MNetwork",
+            "objc_name": "URLSession:dataTask:didReceiveData:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:task:didCompleteWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionTask",
+                "printedName": "Foundation.URLSessionTask",
+                "usr": "c:objc(cs)NSURLSessionTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MNetwork@objc(cs)SseSessionManager(im)URLSession:task:didCompleteWithError:",
+            "mangledName": "$s8MNetwork17SseSessionManagerC03urlC0_4task20didCompleteWithErrorySo12NSURLSessionC_So0K4TaskCs0J0_pSgtF",
+            "moduleName": "MNetwork",
+            "objc_name": "URLSession:task:didCompleteWithError:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:dataTask:didReceive:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLResponse",
+                "printedName": "Foundation.URLResponse",
+                "usr": "c:objc(cs)NSURLResponse"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URLSession.ResponseDisposition) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResponseDisposition",
+                    "printedName": "Foundation.URLSession.ResponseDisposition",
+                    "usr": "c:@E@NSURLSessionResponseDisposition"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MNetwork@objc(cs)SseSessionManager(im)URLSession:dataTask:didReceiveResponse:completionHandler:",
+            "mangledName": "$s8MNetwork17SseSessionManagerC03urlC0_8dataTask10didReceive17completionHandlerySo12NSURLSessionC_So0l4DataG0CSo13NSURLResponseCySo0L19ResponseDispositionVctF",
+            "moduleName": "MNetwork",
+            "objc_name": "URLSession:dataTask:didReceiveResponse:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MNetwork@objc(cs)SseSessionManager",
+        "mangledName": "$s8MNetwork17SseSessionManagerC",
+        "moduleName": "MNetwork",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SseSessionManagerType",
+            "printedName": "SseSessionManagerType",
+            "usr": "s:8MNetwork21SseSessionManagerTypeP",
+            "mangledName": "$s8MNetwork21SseSessionManagerTypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Task",
+        "printedName": "Task",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "retrying",
+            "printedName": "retrying(priority:maxRetryCount:retryDelay:operation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "_Concurrency.Task<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:ScT"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "_Concurrency.TaskPriority?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskPriority",
+                    "printedName": "_Concurrency.TaskPriority",
+                    "usr": "s:ScP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() async throws -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:ScT8MNetworks5Error_pRs_rlE8retrying8priority13maxRetryCount10retryDelay9operationScTyxsAB_pGScPSg_SiSdxyYaYbKctFZ",
+            "mangledName": "$sScT8MNetworks5Error_pRs_rlE8retrying8priority13maxRetryCount10retryDelay9operationScTyxsAB_pGScPSg_SiSdxyYaYbKctFZ",
+            "moduleName": "MNetwork",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Sendable, τ_0_1 == any Swift.Error>",
+            "sugared_genericSig": "<Success, Failure where Success : Swift.Sendable, Failure == any Swift.Error>",
+            "static": true,
+            "declAttributes": [
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:ScT",
+        "mangledName": "$sScT",
+        "moduleName": "_Concurrency",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Sendable, τ_0_1 : Swift.Error>",
+        "sugared_genericSig": "<Success, Failure where Success : Swift.Sendable, Failure : Swift.Error>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLRequest",
+        "printedName": "URLRequest",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(target:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TargetType",
+                "printedName": "any MNetwork.TargetType",
+                "usr": "s:8MNetwork10TargetTypeP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10Foundation10URLRequestV8MNetworkE6targetAcD10TargetType_p_tcfc",
+            "mangledName": "$s10Foundation10URLRequestV8MNetworkE6targetAcD10TargetType_p_tcfc",
+            "moduleName": "MNetwork",
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setHeader",
+            "printedName": "setHeader(header:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation10URLRequestV8MNetworkE9setHeader6headerySDySSypG_tF",
+            "mangledName": "$s10Foundation10URLRequestV8MNetworkE9setHeader6headerySDySSypG_tF",
+            "moduleName": "MNetwork",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation10URLRequestV",
+        "mangledName": "$s10Foundation10URLRequestV",
+        "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLRequest",
+                    "printedName": "Foundation.NSURLRequest",
+                    "usr": "c:objc(cs)NSURLRequest"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLRequest",
+                    "printedName": "Foundation.NSURLRequest",
+                    "usr": "c:objc(cs)NSURLRequest"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jihoon\/develope\/Matrix-Push\/client\/ios\/EdgePushiOS\/FrameworkProj\/MNetwork\/MNetwork\/NetworkExtension\/Task+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 306,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jihoon\/develope\/Matrix-Push\/client\/ios\/EdgePushiOS\/FrameworkProj\/MNetwork\/MNetwork\/NetworkExtension\/Task+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jihoon\/develope\/Matrix-Push\/client\/ios\/EdgePushiOS\/FrameworkProj\/MNetwork\/MNetwork\/SessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 747,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jihoon\/develope\/Matrix-Push\/client\/ios\/EdgePushiOS\/FrameworkProj\/MNetwork\/MNetwork\/SessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 796,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/jihoon\/develope\/Matrix-Push\/client\/ios\/EdgePushiOS\/FrameworkProj\/MNetwork\/MNetwork\/SessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 842,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/jihoon\/develope\/Matrix-Push\/client\/ios\/EdgePushiOS\/FrameworkProj\/MNetwork\/MNetwork\/SseSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1405,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jihoon\/develope\/Matrix-Push\/client\/ios\/EdgePushiOS\/FrameworkProj\/MNetwork\/MNetwork\/SseSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1507,
+      "length": 2,
+      "value": "30"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+framework module Matrix_Mobile {
+  header "Matrix_Mobile-Swift.h"
+  requires objc
+}

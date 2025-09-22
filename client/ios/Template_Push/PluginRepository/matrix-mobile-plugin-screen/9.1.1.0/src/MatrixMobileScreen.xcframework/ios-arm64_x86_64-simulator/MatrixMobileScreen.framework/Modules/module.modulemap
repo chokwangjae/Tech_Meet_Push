@@ -1,0 +1,11 @@
+framework module MatrixMobileScreen {
+  umbrella header "MatrixMobileScreen.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileScreen.Swift {
+  header "MatrixMobileScreen-Swift.h"
+  requires objc
+}

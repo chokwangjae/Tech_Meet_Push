@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<plugin id="matrix-mobile-plugin-log" type="basic" version="9.1.1.0">
+	<name>Logger</name>
+	<description>MatrixMobile Logger Plugin</description>
+	<js-module name="wmlogger" src="www/wmlogger.js">
+		<clobbers target="matrixMobile.plugin.log" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="PluginConfig.plist">
+			<feature name="MatrixMobileLoggerPlugin">
+				<param name="ios-package" value="MatrixMobileLoggerPlugin" />
+				<param name="onload" value="true" />
+			</feature>
+		</config-file>
+		<framework embed="true" src="src/MatrixMobileLogger.framework" />
+	</platform>
+</plugin>

@@ -1,0 +1,518 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MUtil
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Combine
+import CoreData
+import Darwin
+import Foundation
+import Foundation/*.NSRecursiveLock*/
+import OSLog
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+public class DemandBuffer<S> where S : Combine.Subscriber {
+  public init(subscriber: S)
+  public func buffer(value: S.Input) -> Combine.Subscribers.Demand
+  public func complete(completion: Combine.Subscribers.Completion<S.Failure>)
+  public func demand(_ demand: Combine.Subscribers.Demand) -> Combine.Subscribers.Demand
+  @objc deinit
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension Combine.Subscription {
+  public func requestIfNeeded(_ demand: Combine.Subscribers.Demand)
+}
+#if compiler(>=5.3) && $NonescapableTypes
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension Swift.Optional where Wrapped == any Combine.Subscription {
+  public mutating func kill()
+}
+#endif
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+final public class ReplaySubject<Output, Failure> : Combine.Subject where Failure : Swift.Error {
+  public typealias Output = Output
+  public typealias Failure = Failure
+  public init(bufferSize: Swift.Int)
+  final public func send(_ value: Output)
+  final public func send(completion: Combine.Subscribers.Completion<Failure>)
+  final public func send(subscription: any Combine.Subscription)
+  final public func receive<Subscriber>(subscriber: Subscriber) where Output == Subscriber.Input, Failure == Subscriber.Failure, Subscriber : Combine.Subscriber
+  @objc deinit
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+public class Sink<Upstream, Downstream> : Combine.Subscriber where Upstream : Combine.Publisher, Downstream : Combine.Subscriber {
+  public typealias TransformFailure = (Upstream.Failure) -> Downstream.Failure?
+  public typealias TransformOutput = (Upstream.Output) -> Downstream.Input?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(upstream: Upstream, downstream: Downstream, transformOutput: MUtil.Sink<Upstream, Downstream>.TransformOutput? = nil, transformFailure: MUtil.Sink<Upstream, Downstream>.TransformFailure? = nil)
+  #endif
+  public func demand(_ demand: Combine.Subscribers.Demand)
+  public func receive(subscription: any Combine.Subscription)
+  public func receive(_ input: Upstream.Output) -> Combine.Subscribers.Demand
+  public func receive(completion: Combine.Subscribers.Completion<Upstream.Failure>)
+  public func cancelUpstream()
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Failure = Upstream.Failure
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Input = Upstream.Output
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+public class CurrentValueRelay<Output> : MUtil.Relay {
+  public var value: Output {
+    get
+  }
+  public init(_ value: Output)
+  public func accept(_ value: Output)
+  public func receive<S>(subscriber: S) where Output == S.Input, S : Combine.Subscriber, S.Failure == Swift.Never
+  public func subscribe<P>(_ publisher: P) -> Combine.AnyCancellable where Output == P.Output, P : Combine.Publisher, P.Failure == Swift.Never
+  public func subscribe<P>(_ publisher: P) -> Combine.AnyCancellable where Output == P.Output, P : MUtil.Relay
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Failure = Swift.Never
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+public class PassthroughRelay<Output> : MUtil.Relay {
+  public init()
+  public func accept(_ value: Output)
+  public func receive<S>(subscriber: S) where Output == S.Input, S : Combine.Subscriber, S.Failure == Swift.Never
+  public func subscribe<P>(_ publisher: P) -> Combine.AnyCancellable where Output == P.Output, P : Combine.Publisher, P.Failure == Swift.Never
+  public func subscribe<P>(_ publisher: P) -> Combine.AnyCancellable where Output == P.Output, P : MUtil.Relay
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Failure = Swift.Never
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+public protocol Relay : Combine.Publisher where Self.Failure == Swift.Never {
+  associatedtype Output
+  func accept(_ value: Self.Output)
+  func subscribe<P>(_ publisher: P) -> Combine.AnyCancellable where P : Combine.Publisher, Self.Output == P.Output, P.Failure == Swift.Never
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension Combine.Publisher where Self.Failure == Swift.Never {
+  public func subscribe<R>(_ relay: R) -> Combine.AnyCancellable where R : MUtil.Relay, Self.Output == R.Output
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension MUtil.Relay where Self.Output == () {
+  public func accept()
+}
+public struct GesturePublisher : Combine.Publisher {
+  public typealias Output = MUtil.GestureType
+  public typealias Failure = Swift.Never
+  public init(view: UIKit.UIView, gestureType: MUtil.GestureType)
+  public func receive<S>(subscriber: S) where S : Combine.Subscriber, S.Failure == Swift.Never, S.Input == MUtil.GestureType
+}
+public enum GestureType {
+  case tap(_: UIKit.UITapGestureRecognizer = .init())
+  case swipe(_: UIKit.UISwipeGestureRecognizer = .init())
+  case longPress(_: UIKit.UILongPressGestureRecognizer = .init())
+  case pan(_: UIKit.UIPanGestureRecognizer = .init())
+  case pinch(_: UIKit.UIPinchGestureRecognizer = .init())
+  case edge(_: UIKit.UIScreenEdgePanGestureRecognizer = .init())
+}
+public class GestureSubscription<S> : Combine.Subscription where S : Combine.Subscriber, S.Failure == Swift.Never, S.Input == MUtil.GestureType {
+  public init(subscriber: S, view: UIKit.UIView, gestureType: MUtil.GestureType)
+  public func request(_ demand: Combine.Subscribers.Demand)
+  public func cancel()
+  @objc deinit
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension Combine.Publisher {
+  public func withLatestFrom<Other, Result>(_ other: Other, resultSelector: @escaping (Self.Output, Other.Output) -> Result) -> Combine.Publishers.WithLatestFrom<Self, Other, Result> where Other : Combine.Publisher, Self.Failure == Other.Failure
+  public func withLatestFrom<Other, Other1, Result>(_ other: Other, _ other1: Other1, resultSelector: @escaping (Self.Output, (Other.Output, Other1.Output)) -> Result) -> Combine.Publishers.WithLatestFrom<Self, Combine.AnyPublisher<(Other.Output, Other1.Output), Self.Failure>, Result> where Other : Combine.Publisher, Other1 : Combine.Publisher, Self.Failure == Other.Failure, Other.Failure == Other1.Failure
+  public func withLatestFrom<Other, Other1, Other2, Result>(_ other: Other, _ other1: Other1, _ other2: Other2, resultSelector: @escaping (Self.Output, (Other.Output, Other1.Output, Other2.Output)) -> Result) -> Combine.Publishers.WithLatestFrom<Self, Combine.AnyPublisher<(Other.Output, Other1.Output, Other2.Output), Self.Failure>, Result> where Other : Combine.Publisher, Other1 : Combine.Publisher, Other2 : Combine.Publisher, Self.Failure == Other.Failure, Other.Failure == Other1.Failure, Other1.Failure == Other2.Failure
+  public func withLatestFrom<Other>(_ other: Other) -> Combine.Publishers.WithLatestFrom<Self, Other, Other.Output> where Other : Combine.Publisher, Self.Failure == Other.Failure
+  public func withLatestFrom<Other, Other1>(_ other: Other, _ other1: Other1) -> Combine.Publishers.WithLatestFrom<Self, Combine.AnyPublisher<(Other.Output, Other1.Output), Self.Failure>, (Other.Output, Other1.Output)> where Other : Combine.Publisher, Other1 : Combine.Publisher, Self.Failure == Other.Failure, Other.Failure == Other1.Failure
+  public func withLatestFrom<Other, Other1, Other2>(_ other: Other, _ other1: Other1, _ other2: Other2) -> Combine.Publishers.WithLatestFrom<Self, Combine.AnyPublisher<(Other.Output, Other1.Output, Other2.Output), Self.Failure>, (Other.Output, Other1.Output, Other2.Output)> where Other : Combine.Publisher, Other1 : Combine.Publisher, Other2 : Combine.Publisher, Self.Failure == Other.Failure, Other.Failure == Other1.Failure, Other1.Failure == Other2.Failure
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension Combine.Publishers {
+  public struct WithLatestFrom<Upstream, Other, Output> : Combine.Publisher where Upstream : Combine.Publisher, Other : Combine.Publisher, Upstream.Failure == Other.Failure {
+    public typealias Failure = Upstream.Failure
+    public typealias ResultSelector = (Upstream.Output, Other.Output) -> Output
+    public init(upstream: Upstream, second: Other, resultSelector: @escaping Combine.Publishers.WithLatestFrom<Upstream, Other, Output>.ResultSelector)
+    public func receive<S>(subscriber: S) where Output == S.Input, S : Combine.Subscriber, Other.Failure == S.Failure
+  }
+}
+public struct AnyCodable : Swift.Codable {
+  public var value: Any
+  public init(_ value: Any)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension Swift.Array where Element : Swift.Decodable, Element : Swift.Encodable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var convertToJsonString: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @inlinable public subscript(safe index: Swift.Array<Element>.Index) -> Element? {
+    get {
+      return indices.contains(index) ? self[index] : nil
+    }
+  }
+  #endif
+}
+extension Foundation.Bundle {
+  public static var bundleID: Swift.String {
+    get
+  }
+  public static var appVersion: Swift.String {
+    get
+  }
+}
+extension Swift.Encodable {
+  public func convertToDic() throws -> [Swift.String : Any]
+  public func encodeToData() throws -> Foundation.Data
+}
+extension Swift.Decodable {
+  public static func decodeToCodable<T>(dictionary: [Swift.String : Any]) throws -> T where T : Swift.Decodable
+}
+extension Foundation.Data {
+  public func convertToCodable<T>() throws -> T where T : Swift.Decodable
+  public func convertToDic() throws -> [Swift.String : Any]
+  public func convertToJSON() throws -> Swift.String
+  public func convertToAnyCodableDictionary() throws -> [Swift.String : MUtil.AnyCodable]
+}
+extension Swift.Dictionary where Key == Swift.String, Value == Any {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var convertToData: Foundation.Data? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var convertToJsonString: Swift.String? {
+    get
+  }
+  #endif
+  public func truncateIfNeeded(_ value: Any, maxLength: Swift.Int = 200) -> Any
+  public func formatParameters() -> [Swift.String : Any]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func decoded<T>(as type: T.Type, using decoder: Foundation.JSONDecoder = JSONDecoder()) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+}
+extension Swift.Dictionary where Key == Swift.AnyHashable, Value == Any {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func decoded<T>(as type: T.Type, using decoder: Foundation.JSONDecoder = JSONDecoder()) -> T? where T : Swift.Decodable
+  #endif
+}
+extension Swift.Dictionary where Key == Swift.String, Value == Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var convertToData: Foundation.Data? {
+    get
+  }
+  #endif
+}
+extension Swift.Dictionary where Key == Swift.String, Value == MUtil.AnyCodable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var convertAsData: Foundation.Data? {
+    get
+  }
+  #endif
+  public var convertToStringAny: [Swift.String : Any] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func convertToJSONString() -> Swift.String?
+  #endif
+}
+@_hasMissingDesignatedInitializers final public class UtilLog {
+  public static func initLogging(_ debug: Swift.Bool, maxLength: Swift.Int = 2000)
+  public static func d(_ value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func d(prefix: Swift.String, value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func v(_ value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func v(prefix: Swift.String, value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func e(_ value: Swift.String?, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  #endif
+  public static func e(_ error: any Swift.Error, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func e(_ value: Swift.String?, error: any Swift.Error, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  #endif
+  public static func e(_ value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func e(prefix: Swift.String, value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func i(_ value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func i(prefix: Swift.String, value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func w(_ value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func w(tag: Swift.String, _ value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func system(_ value: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func system(_ value: Swift.String, error: any Swift.Error, fileName: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  @objc deinit
+}
+extension Swift.Int {
+  public var toString: Swift.String {
+    get
+  }
+}
+public struct JsonAccessor {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(_ json: Any?)
+  #endif
+  public func key(_ key: Swift.String) -> MUtil.JsonAccessor
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stringValue() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func intValue() -> Swift.Int?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func doubleValue() -> Swift.Double?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func boolValue() -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func dictionaryValue() -> [Swift.String : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func arrayValue() -> [Any]?
+  #endif
+}
+extension CoreData.NSManagedObjectContext {
+  @discardableResult
+  nonisolated public func saveIfNeeded() throws -> Swift.Bool
+}
+public struct Path {
+  public static let separator: Swift.String
+  public init()
+  public init(_ path: Swift.String)
+  public init<S>(components: S) where S : Swift.Collection, S.Element == Swift.String
+}
+extension MUtil.Path : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+  public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+  public init(extendedGraphemeClusterLiteral path: Swift.StringLiteralType)
+  public init(unicodeScalarLiteral path: Swift.StringLiteralType)
+  public init(stringLiteral value: Swift.StringLiteralType)
+  public typealias StringLiteralType = Swift.StringLiteralType
+}
+extension MUtil.Path : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension MUtil.Path {
+  public var string: Swift.String {
+    get
+  }
+  public var url: Foundation.URL {
+    get
+  }
+}
+extension MUtil.Path : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MUtil.Path {
+  public var isAbsolute: Swift.Bool {
+    get
+  }
+  public var isRelative: Swift.Bool {
+    get
+  }
+  public func absolute() -> MUtil.Path
+  public func normalize() -> MUtil.Path
+  public func abbreviate() -> MUtil.Path
+  public func symlinkDestination() throws -> MUtil.Path
+}
+extension MUtil.Path {
+  public var lastComponent: Swift.String {
+    get
+  }
+  public var lastComponentWithoutExtension: Swift.String {
+    get
+  }
+  public var components: [Swift.String] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var `extension`: Swift.String? {
+    get
+  }
+  #endif
+}
+extension MUtil.Path {
+  public var exists: Swift.Bool {
+    get
+  }
+  public var isDirectory: Swift.Bool {
+    get
+  }
+  public var isFile: Swift.Bool {
+    get
+  }
+  public var isSymlink: Swift.Bool {
+    get
+  }
+  public var isReadable: Swift.Bool {
+    get
+  }
+  public var isWritable: Swift.Bool {
+    get
+  }
+  public var isExecutable: Swift.Bool {
+    get
+  }
+  public var isDeletable: Swift.Bool {
+    get
+  }
+}
+extension MUtil.Path {
+  public func mkdir() throws
+  public func mkpath() throws
+  public func delete() throws
+  public func move(_ destination: MUtil.Path) throws
+  public func copy(_ destination: MUtil.Path) throws
+  public func link(_ destination: MUtil.Path) throws
+  public func symlink(_ destination: MUtil.Path) throws
+}
+extension MUtil.Path {
+  public static var current: MUtil.Path {
+    get
+    set
+  }
+  public func chdir(closure: () throws -> ()) rethrows
+}
+extension MUtil.Path {
+  public static var home: MUtil.Path {
+    get
+  }
+  public static var temporary: MUtil.Path {
+    get
+  }
+  public static func processUniqueTemporary() throws -> MUtil.Path
+  public static func uniqueTemporary() throws -> MUtil.Path
+}
+extension MUtil.Path {
+  public func read() throws -> Foundation.Data
+  public func read(_ encoding: Swift.String.Encoding = String.Encoding.utf8) throws -> Swift.String
+  public func write(_ data: Foundation.Data) throws
+  public func write(_ string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
+}
+extension MUtil.Path {
+  public func parent() -> MUtil.Path
+  public func children() throws -> [MUtil.Path]
+  public func recursiveChildren() throws -> [MUtil.Path]
+}
+extension MUtil.Path {
+  public static func glob(_ pattern: Swift.String) -> [MUtil.Path]
+  public func glob(_ pattern: Swift.String) -> [MUtil.Path]
+  public func match(_ pattern: Swift.String) -> Swift.Bool
+}
+extension MUtil.Path : Swift.Sequence {
+  public struct DirectoryEnumerationOptions : Swift.OptionSet {
+    public let rawValue: Swift.UInt
+    public init(rawValue: Swift.UInt)
+    public static var skipsSubdirectoryDescendants: MUtil.Path.DirectoryEnumerationOptions
+    public static var skipsPackageDescendants: MUtil.Path.DirectoryEnumerationOptions
+    public static var skipsHiddenFiles: MUtil.Path.DirectoryEnumerationOptions
+    public typealias ArrayLiteralElement = MUtil.Path.DirectoryEnumerationOptions
+    public typealias Element = MUtil.Path.DirectoryEnumerationOptions
+    public typealias RawValue = Swift.UInt
+  }
+  public struct PathSequence : Swift.Sequence {
+    public func makeIterator() -> MUtil.Path.DirectoryEnumerator
+    public typealias Element = MUtil.Path.DirectoryEnumerator.Element
+    public typealias Iterator = MUtil.Path.DirectoryEnumerator
+  }
+  public struct DirectoryEnumerator : Swift.IteratorProtocol {
+    public typealias Element = MUtil.Path
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func next() -> MUtil.Path?
+    #endif
+    public func skipDescendants()
+  }
+  public func makeIterator() -> MUtil.Path.DirectoryEnumerator
+  public func iterateChildren(options: MUtil.Path.DirectoryEnumerationOptions = []) -> MUtil.Path.PathSequence
+  public typealias Element = MUtil.Path.DirectoryEnumerator.Element
+  public typealias Iterator = MUtil.Path.DirectoryEnumerator
+}
+extension MUtil.Path : Swift.Equatable {
+}
+public func == (lhs: MUtil.Path, rhs: MUtil.Path) -> Swift.Bool
+public func ~= (lhs: MUtil.Path, rhs: MUtil.Path) -> Swift.Bool
+extension MUtil.Path : Swift.Comparable {
+}
+public func < (lhs: MUtil.Path, rhs: MUtil.Path) -> Swift.Bool
+public func + (lhs: MUtil.Path, rhs: MUtil.Path) -> MUtil.Path
+public func + (lhs: MUtil.Path, rhs: Swift.String) -> MUtil.Path
+extension Swift.Sequence {
+  public func asyncMap<T>(_ transform: (Self.Element) async throws -> T) async rethrows -> [T]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func asyncCompactMap<T>(_ transform: (Self.Element) async throws -> T?) async rethrows -> [T]
+  #endif
+}
+extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func convertToJSONString(array: [[Swift.String : Any]]) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func convertToJSONString(array: [Swift.String : Any]) -> Swift.String?
+  #endif
+}
+extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var convertStringToDictionary: [Swift.String : Any]? {
+    get
+  }
+  #endif
+  public func parseQueryString(_ query: Swift.String) -> [Swift.String : Any]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func parseData<T>() -> T? where T : Swift.Decodable
+  #endif
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static var os: [Swift.String : Any] {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var deviceType: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var currentModel: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func getUniqueIdentifier(_ uuidKey: Swift.String = "EdgeAgent") -> Swift.String
+}
+extension Foundation.URLResponse {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var responseStatusCode: Swift.Int? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var imageExtension: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var fileName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var fullFileName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var imageMimeType: Swift.String? {
+    get
+  }
+  #endif
+  public var isImage: Swift.Bool {
+    get
+  }
+}
+public struct Utils {
+  public static func getRandomString(length: Swift.Int) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getIPADownloadPath(url: Swift.String?) -> Swift.String
+  #endif
+}

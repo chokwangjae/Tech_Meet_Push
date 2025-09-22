@@ -1,0 +1,173 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MNetwork
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Combine
+import Foundation
+import MUtil
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum SessionError : Swift.Error {
+  public enum Client : Swift.Error {
+    case badURL
+    case badRequest
+    case forbidden
+    case notFound
+    case tooManyRequests
+    case authTokenVaiidationFailed
+    public static func == (a: MNetwork.SessionError.Client, b: MNetwork.SessionError.Client) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Server : Swift.Error {
+    case unknown
+    public static func == (a: MNetwork.SessionError.Server, b: MNetwork.SessionError.Server) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Network : Swift.Error {
+    case timeout
+    case unknown
+    public static func == (a: MNetwork.SessionError.Network, b: MNetwork.SessionError.Network) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Others : Swift.Error {
+    case empty
+    case decoding
+    case unknown
+    public static func == (a: MNetwork.SessionError.Others, b: MNetwork.SessionError.Others) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension MNetwork.SessionError.Client : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+extension MNetwork.SessionError.Server : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+extension MNetwork.SessionError.Network : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+extension MNetwork.SessionError.Others : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public enum NetworkMethod : Swift.String {
+  case GET, POST, PUT, DELETE
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol TargetType : Swift.CustomStringConvertible {
+  var baseURL: Swift.String { get }
+  var rootContext: Swift.String { get }
+  var path: Swift.String { get }
+  var method: MNetwork.NetworkMethod { get }
+  var sampleData: Foundation.Data { get }
+  var parameter: [Swift.String : Any] { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var headers: [Swift.String : Swift.String]? { get }
+  #endif
+  var absoluteURL: Swift.String { get }
+}
+extension MNetwork.TargetType {
+  public var sampleData: Foundation.Data {
+    get
+  }
+  public var absoluteURL: Swift.String {
+    get
+  }
+}
+public protocol SessionManagerType {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func request(target: any MNetwork.TargetType) async -> (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)
+  #endif
+  func request(target: any MNetwork.TargetType) -> Combine.AnyPublisher<Foundation.URLSession.DataTaskPublisher.Output, any Swift.Error>
+  #if compiler(>=5.3) && $NonescapableTypes
+  func request(target: any MNetwork.TargetType, completion: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+}
+final public class SessionManager : MNetwork.SessionManagerType {
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func request(target: any MNetwork.TargetType) async -> (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)
+  #endif
+  final public func request(target: any MNetwork.TargetType) -> Combine.AnyPublisher<Foundation.URLSession.DataTaskPublisher.Output, any Swift.Error>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func request(target: any MNetwork.TargetType, completion: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+@frozen public enum SseConnectionState {
+  case disconnected
+  case connected
+  case error(any Swift.Error)
+}
+public protocol SseSessionManagerType {
+  var messagePublisher: Combine.AnyPublisher<Swift.String, Swift.Never> { get }
+  var statePublisher: Combine.AnyPublisher<MNetwork.SseConnectionState, Swift.Never> { get }
+  func request(target: any MNetwork.TargetType) async throws
+  func disconnect()
+}
+@objc @_inheritsConvenienceInitializers final public class SseSessionManager : ObjectiveC.NSObject, MNetwork.SseSessionManagerType {
+  final public var messagePublisher: Combine.AnyPublisher<Swift.String, Swift.Never> {
+    get
+  }
+  final public var statePublisher: Combine.AnyPublisher<MNetwork.SseConnectionState, Swift.Never> {
+    get
+  }
+  @objc override dynamic public init()
+  final public func request(target: any MNetwork.TargetType) async throws
+  final public func disconnect()
+  @objc deinit
+}
+extension MNetwork.SseSessionManager : Foundation.URLSessionDataDelegate {
+  @objc final public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  #endif
+  @objc final public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+}
+extension MNetwork.SessionError.Client : Swift.Equatable {}
+extension MNetwork.SessionError.Client : Swift.Hashable {}
+extension MNetwork.SessionError.Server : Swift.Equatable {}
+extension MNetwork.SessionError.Server : Swift.Hashable {}
+extension MNetwork.SessionError.Network : Swift.Equatable {}
+extension MNetwork.SessionError.Network : Swift.Hashable {}
+extension MNetwork.SessionError.Others : Swift.Equatable {}
+extension MNetwork.SessionError.Others : Swift.Hashable {}
+extension MNetwork.NetworkMethod : Swift.Equatable {}
+extension MNetwork.NetworkMethod : Swift.Hashable {}
+extension MNetwork.NetworkMethod : Swift.RawRepresentable {}
+extension MNetwork.SseConnectionState : Swift.Sendable {}

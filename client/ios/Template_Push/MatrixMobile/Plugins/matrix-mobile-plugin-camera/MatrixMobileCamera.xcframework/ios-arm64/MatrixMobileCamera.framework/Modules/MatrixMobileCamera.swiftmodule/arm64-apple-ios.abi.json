@@ -1,0 +1,626 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MatrixMobileCamera",
+    "printedName": "MatrixMobileCamera",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreServices",
+        "printedName": "CoreServices",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MatrixMobileCameraPlugin",
+        "printedName": "MatrixMobileCameraPlugin",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MatrixMobileCameraPlugin",
+                "printedName": "MatrixMobileCamera.MatrixMobileCameraPlugin",
+                "usr": "c:@M@MatrixMobileCamera@objc(cs)MatrixMobileCameraPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MatrixMobileCamera@objc(cs)MatrixMobileCameraPlugin(im)init",
+            "mangledName": "$s18MatrixMobileCamera0abC6PluginCACycfc",
+            "moduleName": "MatrixMobileCamera",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "imagePickerController",
+            "printedName": "imagePickerController(_:didFinishPickingMediaWithInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImagePickerController",
+                "printedName": "UIKit.UIImagePickerController",
+                "usr": "c:objc(cs)UIImagePickerController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[UIKit.UIImagePickerController.InfoKey : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InfoKey",
+                    "printedName": "UIKit.UIImagePickerController.InfoKey",
+                    "usr": "c:@T@UIImagePickerControllerInfoKey"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MatrixMobileCamera@objc(cs)MatrixMobileCameraPlugin(im)imagePickerController:didFinishPickingMediaWithInfo:",
+            "mangledName": "$s18MatrixMobileCamera0abC6PluginC21imagePickerController_29didFinishPickingMediaWithInfoySo07UIImagefG0C_SDySo0nfgM3KeyaypGtF",
+            "moduleName": "MatrixMobileCamera",
+            "objc_name": "imagePickerController:didFinishPickingMediaWithInfo:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "imagePickerControllerDidCancel",
+            "printedName": "imagePickerControllerDidCancel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImagePickerController",
+                "printedName": "UIKit.UIImagePickerController",
+                "usr": "c:objc(cs)UIImagePickerController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MatrixMobileCamera@objc(cs)MatrixMobileCameraPlugin(im)imagePickerControllerDidCancel:",
+            "mangledName": "$s18MatrixMobileCamera0abC6PluginC30imagePickerControllerDidCancelyySo07UIImagefG0CF",
+            "moduleName": "MatrixMobileCamera",
+            "objc_name": "imagePickerControllerDidCancel:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didUpdateLocations:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreLocation.CLLocation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MatrixMobileCamera@objc(cs)MatrixMobileCameraPlugin(im)locationManager:didUpdateLocations:",
+            "mangledName": "$s18MatrixMobileCamera0abC6PluginC15locationManager_18didUpdateLocationsySo010CLLocationF0C_SaySo0J0CGtF",
+            "moduleName": "MatrixMobileCamera",
+            "objc_name": "locationManager:didUpdateLocations:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MatrixMobileCamera@objc(cs)MatrixMobileCameraPlugin",
+        "mangledName": "$s18MatrixMobileCamera0abC6PluginC",
+        "moduleName": "MatrixMobileCamera",
+        "objc_name": "MatrixMobileCameraPlugin",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Matrix_Mobile@objc(cs)MatrixMobilePlugin",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Matrix_Mobile.MatrixMobilePlugin",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "MatrixMobilePluginProtocol",
+            "printedName": "MatrixMobilePluginProtocol",
+            "usr": "c:@M@Matrix_Mobile@objc(pl)MatrixMobilePluginProtocol",
+            "mangledName": "$s13Matrix_Mobile0aB14PluginProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Matrix_Mobile",
+        "printedName": "Matrix_Mobile",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreServices",
+        "printedName": "CoreServices",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MatrixMobileCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 2922,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2954,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3166,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3196,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3274,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3304,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3575,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3598,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 3683,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 3691,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3939,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3953,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4087,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4110,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/MatrixMobileCameraPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 401,
+      "length": 21,
+      "value": "\"matrixMobile_photo_\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/MatrixMobileCameraPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 929,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/PictureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 198,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/PictureOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/PictureOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 519,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/PictureOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 552,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/PictureOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 584,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/PictureOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 611,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/PictureOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 658,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/CameraPicker.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/CameraPicker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 248,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 169,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 180,
+      "length": 22,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 212,
+      "length": 24,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 293,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 304,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 373,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 384,
+      "length": 14,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uapmobile\/TNB\/new\/source\/ios\/W-Matrix-Plugin-iOS\/basic\/MatrixMobileCamera\/9.2.1.0\/MatrixMobileCamera\/Model\/Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 12,
+      "value": "2"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MatrixPush
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Combine
+import CoreData
+import Foundation
+import MCommon
+import MNetwork
+import MUtil
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct MatrixPushReceiveDTO : Swift.Codable {
+  public let pushDispatchId: Swift.String
+  public let color: Swift.String?
+  public let messagePriority: Swift.String?
+  public let icon: Swift.String?
+  public let messageId: Swift.String?
+  public let title: Swift.String?
+  public let body: Swift.String?
+  public let messageType: Swift.String
+  public let payload: Swift.String?
+  public let sender: Swift.String?
+  public let imageUrl: Swift.String?
+  public let timestamp: Swift.String
+  public let campaignId: Swift.String?
+  public let clientStatus: Swift.String?
+  public let channelName: Swift.String?
+  public let channelId: Swift.String?
+  public let channelDescription: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MatrixPush.MatrixPushReceiveDTO : MCommon.EntityConvertible {
+  public func toManagedObject(in context: CoreData.NSManagedObjectContext) -> MatrixPush.MatrixPushReceiveEntity
+  public typealias ManagedObject = MatrixPush.MatrixPushReceiveEntity
+}
+public enum PushDataKey : Swift.String {
+  case serverURL
+  case uniqueSeq
+  case sender
+  case messageType
+  case messagePriority
+  case title
+  case body
+  case imageUrl
+  case icon
+  case color
+  case timestamp
+  case channelId
+  case channelName
+  case channelDescription
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PushMessage : Swift.Codable {
+  public let pushDispatchId: Swift.String
+  public let messageType: Swift.String
+  public let title: Swift.String?
+  public let body: Swift.String?
+  public let payload: Swift.String?
+  public let imageUrl: Swift.String?
+  public let timestamp: Swift.String
+  public let status: Swift.String
+  public let campaignId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserConsentResponse : Swift.Codable {
+  public let consented: Swift.Bool
+  public let campaignDetails: [MatrixPush.UserCampaignGetResponse]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserCampaignGetResponse : Swift.Codable {
+  public let campaignId: Swift.Int
+  public let campaignName: Swift.String
+  public let consented: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc(MatrixPushReceiveEntity) nonisolated public class MatrixPushReceiveEntity : CoreData.NSManagedObject {
+  @objc @NSManaged nonisolated dynamic public var pushDispatchId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged nonisolated dynamic public var clientStatus: Swift.String {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var color: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var messagePriority: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var icon: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var body: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @objc @NSManaged nonisolated dynamic public var messageType: Swift.String {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var campaignId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var payload: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var sender: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var imageUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var sendToServer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var errorMessage: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @objc @NSManaged nonisolated dynamic public var receivedAt: Swift.String {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var updatedAt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @objc @NSManaged nonisolated dynamic public var createdAt: Swift.String {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var asyncSubmission: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var channelDescription: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var channelName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var channelId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
+  @objc deinit
+}
+extension MatrixPush.MatrixPushReceiveEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<MatrixPush.MatrixPushReceiveEntity>
+}
+public enum ClientStatus : Swift.String, Swift.Codable {
+  case ERROR, RECEIVED, CONFIRMED, DELETE
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension CoreData.NSManagedObjectModel {
+  public static let sharedModel: CoreData.NSManagedObjectModel
+}
+@_hasMissingDesignatedInitializers final public class PushUserDefaultManager {
+  @objc deinit
+}
+extension MCommon.UserDefaultsKey {
+  public static var fcmToken: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var serverUrl: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var matrixPushId: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var receivePushList: MCommon.UserDefaultsKey<T>.Key<[[Swift.AnyHashable : Any]]> {
+    get
+  }
+  public static var userId: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var userName: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var userEMail: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var pushMode: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var histroyToken: MCommon.UserDefaultsKey<T>.Key<Foundation.Data> {
+    get
+  }
+  public static var syncPushId: MCommon.UserDefaultsKey<T>.Key<[Swift.String]> {
+    get
+  }
+  public static var rId: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+  public static var uuid: MCommon.UserDefaultsKey<T>.Key<Swift.String> {
+    get
+  }
+}
+public enum PushMode : Swift.String, Swift.CaseIterable {
+  case all
+  case `public`
+  case `private`
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [MatrixPush.PushMode]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [MatrixPush.PushMode] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class MatrixPushClient {
+  @objc deinit
+}
+extension MatrixPush.MatrixPushClient {
+  public class builder {
+    public init(_ serverUrl: Swift.String)
+    public func onInitialized(_ listener: @escaping () async -> Swift.Void) -> MatrixPush.MatrixPushClient.builder
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func onError(_ listener: ((MatrixPush.MpsError) -> Swift.Void)?) -> MatrixPush.MatrixPushClient.builder
+    #endif
+    public func debugMode(_ enable: Swift.Bool) -> MatrixPush.MatrixPushClient.builder
+    public func appGroupName(_ appGroupName: Swift.String) -> MatrixPush.MatrixPushClient.builder
+    @discardableResult
+    public func build() -> MatrixPush.MatrixPushClient
+    @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers final public class MatrixPushExternalFunctions {
+  public static func receivePublicPush(pushData: [Swift.AnyHashable : Any], appGroupName: Swift.String) async
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class MatrixPushFunctions {
+  public static var isInitialized: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func start(pushToken: Swift.String?) async
+  #endif
+  public static func login(userId: Swift.String = "", userName: Swift.String = "", email: Swift.String = "") async
+  public static func setOnNewMessageListener(listener: @escaping (MatrixPush.PushMessage) -> Swift.Void)
+  public static func setOnSyncMessageCompleteListener(listener: @escaping (Swift.Int) -> Swift.Void)
+  public static func syncMessage(limit: Swift.Int = 20)
+  public static func markMessageAsConfirmed(receiveData: [Swift.AnyHashable : Any]) async
+  public static func markAllMessagesAsConfirmed() async
+  public static func getAllMessages() -> [MatrixPush.PushMessage]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getMessage(by id: Swift.String) -> MatrixPush.PushMessage?
+  #endif
+  public static func getCampaignList() async -> [MatrixPush.UserCampaignGetResponse]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func updateUserConsent(consented: Swift.Bool) async -> MatrixPush.UserConsentResponse?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func updateCampaignConsent(campaignId: Swift.Int, consented: Swift.Bool) async -> MatrixPush.UserConsentResponse?
+  #endif
+  public static func deleteMessage(pushDispatchId: Swift.String) async
+  public static func logout() async
+  @objc deinit
+}
+public protocol MpsErrorType : Foundation.LocalizedError {
+  var info: (code: Swift.String, message: Swift.String) { get }
+}
+public struct MpsError : Swift.Error, MatrixPush.MpsErrorType {
+  public enum ErrorCode {
+    case unknown
+    case initializationFailed
+    case invalidServerUrl
+    case permissionDenied
+    case sseConnectionFailed
+    case loginFailed
+    case networkError
+    case syncMessagesFailed
+    case markAsConfirmedFailed
+    case getMessagesFailed
+    case campaignInfoFailed
+    case deleteMessageFailed
+    case retryMessageCallbackFailed
+    case logoutFailed
+    case registerFailed
+    public static func == (a: MatrixPush.MpsError.ErrorCode, b: MatrixPush.MpsError.ErrorCode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(code: MatrixPush.MpsError.ErrorCode, detailedMessage: Swift.String? = nil)
+  #endif
+  public var info: (code: Swift.String, message: Swift.String) {
+    get
+  }
+  public var errorDescription: Swift.String {
+    get
+  }
+}
+extension MatrixPush.PushDataKey : Swift.Equatable {}
+extension MatrixPush.PushDataKey : Swift.Hashable {}
+extension MatrixPush.PushDataKey : Swift.RawRepresentable {}
+extension MatrixPush.ClientStatus : Swift.Equatable {}
+extension MatrixPush.ClientStatus : Swift.Hashable {}
+extension MatrixPush.ClientStatus : Swift.RawRepresentable {}
+extension MatrixPush.PushMode : Swift.Equatable {}
+extension MatrixPush.PushMode : Swift.Hashable {}
+extension MatrixPush.PushMode : Swift.RawRepresentable {}
+extension MatrixPush.MpsError.ErrorCode : Swift.Equatable {}
+extension MatrixPush.MpsError.ErrorCode : Swift.Hashable {}

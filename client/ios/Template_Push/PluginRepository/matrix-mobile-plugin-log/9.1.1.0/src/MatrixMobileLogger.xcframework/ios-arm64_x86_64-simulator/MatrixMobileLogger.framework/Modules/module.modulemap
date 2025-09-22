@@ -1,0 +1,11 @@
+framework module MatrixMobileLogger {
+  umbrella header "MatrixMobileLogger.h"
+  export *
+
+  module * { export * }
+}
+
+module MatrixMobileLogger.Swift {
+  header "MatrixMobileLogger-Swift.h"
+  requires objc
+}
