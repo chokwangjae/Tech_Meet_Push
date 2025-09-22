@@ -1,0 +1,128 @@
+[versions]
+
+# basic version
+android-gradle-plugin = "8.10.1"
+
+# Annotations processing (https://github.com/google/ksp)
+ksp = "2.1.0-1.0.29"
+
+#noinspection GradleDependency
+commonsIo = "2.8.0"
+
+kotlin = "2.1.0"
+
+kotlinGradlePlugin = "2.1.0"
+
+appcompat = "1.7.0"
+constraintlayout = "2.2.1"
+converterScalars = "2.11.0"
+converterGson = "2.11.0"
+gson = "2.12.1"
+datastorePreferences = "1.1.7"
+kotlinCoreKtx = "1.16.0"
+kotlinxCoroutinesCore = "1.10.1"
+lifecycleRuntimeKtx = "2.9.0"
+okhttpSse = "4.10.0"
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+material = "1.12.0"
+snkeyaml = "2.3"
+
+dagger = "2.56.2"
+
+dagger-hilt = "2.56.2"
+hiltNavigationCompose = "1.2.0"
+
+# firebase
+firebase-bom = "33.14.0"
+google-services = "4.4.2"
+firebaseMessagingKtx = "24.1.1"
+
+# coil
+coil = "2.6.0"
+
+# database
+androidx-room = "2.7.1"
+
+# dokka
+dokka = "2.0.0"
+foundationAndroid = "1.8.2"
+
+# badge
+# https://github.com/leolin310148/ShortcutBadger
+shorcut-badger = "1.1.22"
+
+[libraries]
+commons-io = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+kotlinCoreKtx = { module="androidx.core:core-ktx", version.ref = "kotlinCoreKtx"}
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+
+parser_gson = { module = "com.google.code.gson:gson", version.ref = "gson"}
+datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+lifecycle-common = { module = "androidx.lifecycle:lifecycle-common", version.ref = "lifecycleRuntimeKtx" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+okhttp-sse = { module = "com.squareup.okhttp3:okhttp-sse", version.ref = "okhttpSse" }
+
+material = { module = "com.google.android.material:material", version.ref = "material" }
+snake_yaml = {module = "org.yaml:snakeyaml", version.ref = "snkeyaml"}
+kotlin_stdlib = {module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin"}
+kotlin_reflect = {module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin"}
+
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+
+# okhttp
+okhttp-urlconnection = { module = "com.squareup.okhttp3:okhttp-urlconnection", version.ref = "okhttp"}
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+
+# retrofit
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "converterScalars" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+
+# Hilt
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger-hilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger-hilt" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+
+# Firebase
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom"}
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firebase-messaging-ktx = { group = "com.google.firebase", name = "firebase-messaging-ktx"}
+
+# Coil
+coil = { module = "io.coil-kt:coil", version.ref="coil" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref="coil" }
+
+# database
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "androidx-room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "androidx-room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "androidx-room" }
+androidx-foundation-android = { group = "androidx.compose.foundation", name = "foundation-android", version.ref = "foundationAndroid" }
+
+# badge
+shortcut-badger = { module = "me.leolin:ShortcutBadger", version.ref = "shorcut-badger" }
+
+[bundles]
+retrofit = [
+    "retrofit",
+    "converter-gson",
+    "converter-scalars",
+    "okhttp-urlconnection",
+    "okhttp-logging-interceptor",
+]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt"}
+google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
