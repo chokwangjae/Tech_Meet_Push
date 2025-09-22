@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
         lifecycleScope.launch {
             app.mpsErrorEvents.collectLatest { mpsException ->
                 val errorMessage = "${mpsException.details ?: ""} (${mpsException.error.code})"
-                Toast.makeText(this@MainActivity, errorMessage, Toast.LENGTH_LONG).show()
+//                Toast.makeText(this@MainActivity, errorMessage, Toast.LENGTH_LONG).show()
             }
         }
 
