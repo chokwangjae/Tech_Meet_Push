@@ -17,6 +17,8 @@ local.properties
 .idea
 .kotlin
 .vscode
+.cursorrules
+agent.md
 
 /modules/matrix-commons/build/
 /modules/matrix-push-client/build/
