@@ -45,8 +45,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":modules:matrix-commons"))
-    implementation(project(":modules:matrix-push-client"))
+//    implementation(project(":modules:matrix-commons"))
+//    implementation(project(":modules:matrix-push-client"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

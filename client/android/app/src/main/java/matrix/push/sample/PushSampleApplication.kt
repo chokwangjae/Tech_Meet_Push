@@ -59,7 +59,6 @@ class PushSampleApplication : Application() {
         // Matrix Push Client 초기화
         // Application 에서 초기화를 해야 앱이 종료 된 상태에서도 푸시를 받을 수 있다.
         mpsClient = MatrixPushClient.builder(this, "http://192.168.152.84:20512/")
-            .autoTokenRegistration(true)
             .debugMode(true)
             .onError(mpsErrorListener)
             .onInitialized(onInitializedListener)
