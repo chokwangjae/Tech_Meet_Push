@@ -46,13 +46,11 @@ class PushSampleApplication : Application() {
             override fun onInitialized(client: MatrixPushClient) {
                 Log.d(TAG, "onInitialized ::")
 
-                client.login("tarkarn", "tarkarn_name", "tarkarn@inswave.com")
-
-                // PushMode.ALL 또는 PushMode.PRIVATE 인 경우에만 사용.
-                // 서버에도 동일한 모드가 있으며 동일하게 서버-클라이언트가 모드가 맞아야 한다.
-//                client.connect {
-//                    Log.d(TAG, "onInitialized :: connected sse +++ ")
-//                }
+                client.login("tarkarn", "tarkarn_name", "tarkarn@inswave.com") {
+                    client.connect {
+                        Log.d(TAG, "onInitialized :: connected sse +++ ")
+                    }
+                }
             }
         }
 

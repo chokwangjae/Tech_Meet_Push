@@ -74,7 +74,7 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
     implementation(push.bundles.retrofit)
-//    implementation(push.okhttp.sse)     // private push 사용 시 필수.
+    implementation(push.okhttp.sse)     // private push 사용 시 필수.
     implementation(push.coil)
     implementation(push.datastore.preferences)
     implementation(push.bundles.database)
